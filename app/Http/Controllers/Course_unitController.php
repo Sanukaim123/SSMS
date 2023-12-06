@@ -21,7 +21,9 @@ class Course_unitController extends Controller
         $data=$request->validate([
             
             'Course_Code'=>'required',
-            'Course_Name'=>'required'
+            'Course_Name'=>'required',
+            'Credit_Value'=>'required',
+            'Description'=>'required'
         ]);
 
         $newCourse= Course::create($data);

@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DemostratorController;
 use App\Http\Controllers\LecturerController;
 use App\Http\Controllers\SubjectController;
+use App\Http\Controllers\Course_unitController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -66,5 +67,9 @@ Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->n
 Route::post('/admin/show_subjects',[SubjectController::class,'sub_store'])->name('subject.store');
 Route::delete('/admin/show_/{subject}/destroy',[SubjectController::class,'destroy'])->name('subject.destroy');
 
+Route::get('/admin/add_courses',[Course_unitController::class,'add_course_units'])->name('admin.add_course_units');
+Route::get('/admin/show_courses',[Course_unitController::class,'show_course_units'])->name('admin.show_course_units');
+Route::post('/admin/show_courses',[Course_unitController::class,'course_store'])->name('course.store');
+Route::delete('/admin/show_courses/{course}/destroy',[Course_unitController::class,'destroy'])->name('course.destroy');
 
 
