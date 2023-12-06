@@ -26,7 +26,7 @@
                     <td>{{$course->id}}</td>
                     <td>{{$course->Course_Code}}</td>
                     <td>{{$course->Course_Name}}</td>
-                    <td>{{$course->Credit_value}}</td>
+                    <td>{{$course->Credit_Value}}</td>
                     <td>{{$course->Description}}</td>
                     <td>
                         <form method="post" action="{{route('course.destroy',['course'=>$course])}}">
