@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     @include('layouts.head')
-</head>
-<body>
-    <navbar>
-	    @include('layouts.nav')
-    </navbar>
+@extends('admin.admindashboard')
+@section('admin')
+<div class="page-content">
    <h1>Add Courses</h1> 
    <div>
         @if($errors->any())
@@ -48,5 +42,4 @@
     
 </div>
    
-</body>
-</html>
+@endsection
