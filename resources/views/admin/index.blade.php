@@ -31,7 +31,7 @@
       <div class="card-body">
         <h5 class="card-title"> New Course Units </h5>
         <p class="card-text"></p>
-        <a href="" class="btn btn-primary"> Add </a>
+        <a href="{{route('admin.add_course_units')}}" class="btn btn-primary"> Add </a>
       </div>
     </div>
   </div>
