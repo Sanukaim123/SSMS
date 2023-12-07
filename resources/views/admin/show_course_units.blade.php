@@ -21,7 +21,6 @@
                     <th>Discription</th>
                     <th>Delete</th>
                     <th>Edit</th>
-
                 </tr>
                 @foreach($courses as $course)
                 <tr>
