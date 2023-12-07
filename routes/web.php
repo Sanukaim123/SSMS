@@ -7,6 +7,7 @@ use App\Http\Controllers\DemostratorController;
 use App\Http\Controllers\LecturerController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Course_unitController;
+use App\Http\Controllers\NotificationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -74,3 +75,9 @@ Route::delete('/admin/show_courses/{course}/destroy',[Course_unitController::cla
 Route::get('/admin/show_courses/{course}/edit',[Course_unitController::class,'edit'])->name('course.edit');
 Route::put('/admin/show_courses/{course}/update',[Course_unitController::class,'update'])->name('course.update');
 
+
+
+Route::get('/notification',[NotificationController::class, 'index'])->name('notification.index');
+Route::get('/notification',[NotificationController::class, 'create'])->name('notification');
+Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');  
+                                                                                                       
