@@ -35,4 +35,24 @@ class Course_unitController extends Controller
         return redirect(route('admin.show_course_units'))->with('success','Course unit deleted Succesfully');
     }
 
+    public function edit(course $course){
+        return view('admin.edit_course_units',['course'=>$course]);
+
+    }
+
+    public function update(Course $course, Request $request){
+        $data=$request->validate([
+            'Course_Code'=>'required',
+            'Course_Name'=>'required',
+            'Credit_Value'=>'required',
+            'Description'=>'required'
+
+        ]);
+
+        $course->update($data);
+        return redirect(route('admin.show_course_units'))->with('success','Course unit update Successfully');
+    }
+    
+
+
 }

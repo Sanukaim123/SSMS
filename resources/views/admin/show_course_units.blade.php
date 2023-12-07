@@ -20,6 +20,8 @@
                     <th>Credit Value</th>
                     <th>Discription</th>
                     <th>Delete</th>
+                    <th>Edit</th>
+
                 </tr>
                 @foreach($courses as $course)
                 <tr>
@@ -28,6 +30,7 @@
                     <td>{{$course->Course_Name}}</td>
                     <td>{{$course->Credit_Value}}</td>
                     <td>{{$course->Description}}</td>
+
                     <td>
                         <form method="post" action="{{route('course.destroy',['course'=>$course])}}">
                         @csrf
@@ -35,6 +38,9 @@
                         <input type="submit" value="Delete"/>
                         </form>
 
+                    </td>
+                    <td>
+                        <a href ="{{route('course.edit',['course'=>$course])}}">Edit</a>
                     </td>
                 </tr>
                 @endforeach

@@ -71,5 +71,6 @@ Route::get('/admin/add_courses',[Course_unitController::class,'add_course_units'
 Route::get('/admin/show_courses',[Course_unitController::class,'show_course_units'])->name('admin.show_course_units');
 Route::post('/admin/show_courses',[Course_unitController::class,'course_store'])->name('course.store');
 Route::delete('/admin/show_courses/{course}/destroy',[Course_unitController::class,'destroy'])->name('course.destroy');
-
+Route::get('/admin/show_courses/{course}/edit',[Course_unitController::class,'edit'])->name('course.edit');
+Route::put('/admin/show_courses/{course}/update',[Course_unitController::class,'update'])->name('course.update');
 
