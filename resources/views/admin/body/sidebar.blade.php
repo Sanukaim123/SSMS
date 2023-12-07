@@ -164,10 +164,10 @@
             <div class="collapse" id="forms">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="{{url('/add_courses')}}" class="nav-link">Add Course Units</a>
+                  <a href="{{route('admin.add_subjects')}}" class="nav-link">Add Subjects</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/forms/advanced-elements.html" class="nav-link">Add Results</a>
+                  <a href="{{route('admin.add_course_units')}}" class="nav-link">Add Course Units</a>
                 </li>
                 <li class="nav-item">
                   <a href="pages/forms/editors.html" class="nav-link">Add users</a>
