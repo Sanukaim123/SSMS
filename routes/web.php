@@ -8,6 +8,8 @@ use App\Http\Controllers\LecturerController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Course_unitController;
 use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\LevelController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -74,6 +76,10 @@ Route::post('/admin/show_courses',[Course_unitController::class,'course_store'])
 Route::delete('/admin/show_courses/{course}/destroy',[Course_unitController::class,'destroy'])->name('course.destroy');
 Route::get('/admin/show_courses/{course}/edit',[Course_unitController::class,'edit'])->name('course.edit');
 Route::put('/admin/show_courses/{course}/update',[Course_unitController::class,'update'])->name('course.update');
+
+Route::get('/admin/level_list',[LevelController::class,'level_list'])->name('admin.level_list');
+Route::get('/admin/add_levels',[LevelController::class,'add-levels'])->name('admin.add_levels');
+Route::post('/admin/show_levels',[LevelController::class,'level_store'])->name('level.store');
 
 
 
