@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    @include('layouts.head')
 </head>
 <body>
-    <h1>aaaaaaaaa</h1>
-</body>
-</html>
+    <navbar>
+	    @include('layouts.nav')
+    </navbar>
+<h1>Add Levels & Semesters</h1>
+    <div>
+        @if($errors->any())
+        <ul>
+            @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+            @endforeach
+        </ul>
+        @endif
+    </div>
+
+<section id="add_level">
+        
+    <form method="post" action="{{route('level.store')}}">
+        @csrf
+        @method('post')
+        <div class="level-form-group row">
+                <label for="Level">Level:</label><br>
+                <input type="text" id="Level" name="Level" placeholder="Level 1"><br>
+
+                <label for="Semester">Semester:</label><br>
+                <input type="text" id="Semester" name="Semester" placeholder="Semester 1">
+            </div>
+       
+        <br>
+        
+        <button class="btn btn-primary" type="submit" value="Save a New Level">Add</button>
+    </form>
+    
+</div>
+
+
