@@ -11,8 +11,8 @@ class Notification extends Model
 
 protected $fillable = [
     
-    'add_tutorial',
-    'add_comment',
+    'file',
+    'add_description',
     'subject',
     'level',
     'course',
