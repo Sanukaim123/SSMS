@@ -72,6 +72,7 @@
   </div>
 
 
+
   
 
   <div class="col">
@@ -86,6 +87,7 @@
 </div>
 
 @endsection
+
 
 
 
