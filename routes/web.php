@@ -69,6 +69,7 @@ Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
 
 
+
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
 Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->name('admin.show_subjects');
 Route::post('/admin/show_subjects',[SubjectController::class,'sub_store'])->name('subject.store');
