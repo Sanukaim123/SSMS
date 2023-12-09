@@ -321,7 +321,7 @@ div.transbox p {
 #footer p {
   margin: 0;
 }
-/*notification
+/*notification*/
 *{
   margin: 0;
   padding: 0;
@@ -426,4 +426,4 @@ input{
 .row .select-group{
   flex-basis: 48%;
   
-}*/
+}
