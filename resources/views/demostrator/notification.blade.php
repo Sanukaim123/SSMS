@@ -19,16 +19,16 @@
     @method('post')
           
     <div class="input-group">
-        <textarea id="add_tutorial" name="add_tutorial" rows="5" required></textarea>
-        <label for="message"><i class="bi bi-file-earmark-text-fill"></i> 
+        <input type="file" id="file"  name="file" required>     
+         <label for="file"><i class="bi bi-file-earmark-text-fill"></i> 
         
         Add Tutorial</label>
     </div>
     
     <div class="input-group">
     
-        <textarea id="add_comment" name="add_comment" rows="3" required></textarea>
-        <label for="message"><i class="bi bi-chat-text"></i> Add Comment </label>
+        <textarea id="add_description" name="add_description" rows="3" required></textarea>
+        <label for="message"><i class="bi bi-chat-text"></i> Add Description </label>
         
     </div>
 <br>
