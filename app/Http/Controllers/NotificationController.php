@@ -41,7 +41,7 @@ class NotificationController extends Controller
         $notification->final_submission_date =$request->input('final_submission_date');
         $notification->save();
     
-        return redirect(route('notification.index'));
+        return redirect(route('notification'));
     }
     }
 
