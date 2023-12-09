@@ -34,7 +34,7 @@ class NotificationController extends Controller
   
         $notification =new Notification();
         $notification->add_tutorial = $request->input('add_tutorial');
-        $notification->add_comment = $request->input('add_comment');
+        $notification->add_description = $request->input('add_comment');
         $notification->subject = $request->input('subject');
         $notification->level = $request->input('level');
         $notification->course= $request->input('course');
