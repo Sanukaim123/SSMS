@@ -20,7 +20,7 @@ class NotificationController extends Controller
 
     public function store(Request $request){
         $data = $request->validate([
-            'add_tutorial'=>'required|string|max:255',
+            'file'=>'required','mimes:jpeg,png,pdf','max:2048',
             'add_description'=>'required|string|max:255',
             'subject'=>'required|string|max:255',
             'level'=>'required',
@@ -33,8 +33,8 @@ class NotificationController extends Controller
      
   
         $notification =new Notification();
-        $notification->add_tutorial = $request->input('add_tutorial');
-        $notification->add_description = $request->input('add_comment');
+        $notification->file = $request->input('file');
+        $notification->add_description = $request->input('add_description');
         $notification->subject = $request->input('subject');
         $notification->level = $request->input('level');
         $notification->course= $request->input('course');

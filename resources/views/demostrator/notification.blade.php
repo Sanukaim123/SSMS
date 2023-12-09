@@ -19,8 +19,8 @@
     @method('post')
           
     <div class="input-group">
-        <textarea id="add_tutorial" name="add_tutorial" rows="5" required></textarea>
-        <label for="message"><i class="bi bi-file-earmark-text-fill"></i> 
+        <input type="file" id="file"  name="file" required>     
+         <label for="file"><i class="bi bi-file-earmark-text-fill"></i> 
         
         Add Tutorial</label>
     </div>
