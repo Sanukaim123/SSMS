@@ -173,7 +173,7 @@
                   <a href="pages/forms/editors.html" class="nav-link">Add users</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/forms/wizard.html" class="nav-link">Wizard</a>
+                  <a href="pages/forms/wizard.html" class="nav-link">Add Attendance</a>
                 </li>
               </ul>
             </div>
