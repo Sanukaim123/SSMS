@@ -27,8 +27,8 @@
     
     <div class="input-group">
     
-        <textarea id="add_comment" name="add_comment" rows="3" required></textarea>
-        <label for="message"><i class="bi bi-chat-text"></i> Add Comment </label>
+        <textarea id="add_description" name="add_description" rows="3" required></textarea>
+        <label for="message"><i class="bi bi-chat-text"></i> Add Description </label>
         
     </div>
 <br>

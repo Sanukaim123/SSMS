@@ -21,7 +21,7 @@ class NotificationController extends Controller
     public function store(Request $request){
         $data = $request->validate([
             'add_tutorial'=>'required|string|max:255',
-            'add_comment'=>'required|string|max:255',
+            'add_description'=>'required|string|max:255',
             'subject'=>'required|string|max:255',
             'level'=>'required',
             'course'=>'required',
