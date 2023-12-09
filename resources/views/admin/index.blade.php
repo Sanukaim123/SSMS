@@ -72,5 +72,32 @@
   </div>
 
 
+
+  
+
+  <div class="col">
+    <div class="card" style="width: 6cm;">
+      <div class="card-body">
+        <h5 class="card-titl"> Levels & Semesters</h5>
+        <p class="card-text"></p>
+        <a href="{{route('admin.level_list')}}" class="btn btn-primary"> Add </a>
+      </div>
+    </div>
+  </div>
 </div>
+
 @endsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
