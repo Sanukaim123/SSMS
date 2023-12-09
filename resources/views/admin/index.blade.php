@@ -71,8 +71,6 @@
     </div>
   </div>
 
-<<<<<<< Updated upstream
-=======
   <div class="col">
     <div class="card" style="width: 6cm;">
       <div class="card-body">
@@ -129,6 +127,5 @@
 
 
 
->>>>>>> Stashed changes
 </div>
 @endsection
