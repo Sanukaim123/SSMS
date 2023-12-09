@@ -73,8 +73,6 @@
 
 
 
-  
-
   <div class="col">
     <div class="card" style="width: 6cm;">
       <div class="card-body">
