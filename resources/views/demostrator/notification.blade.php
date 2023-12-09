@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>Notifications</title>
-        <link rel="stylesheet" href="{{asset('CSS/custom.css')}}">
+        <link rel="stylesheet" href="{{asset('CSS/notification/custom.css')}}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     </head>
     <body>
