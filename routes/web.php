@@ -10,6 +10,9 @@ use App\Http\Controllers\Course_unitController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\LevelController;
 use App\Http\Controllers\SubcourseController;
+use App\Http\Controllers\CombinationController;
+use App\Http\Controllers\SyllabusController;
+use App\Http\Controllers\SemesterController;
 
 
 /*
@@ -70,6 +73,7 @@ Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
 
 
+
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
 Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->name('admin.show_subjects');
 Route::post('/admin/show_subjects',[SubjectController::class,'sub_store'])->name('subject.store');
@@ -86,6 +90,13 @@ Route::get('/admin/level_list',[LevelController::class,'level_list'])->name('adm
 Route::get('/admin/add_levels',[LevelController::class,'add-levels'])->name('admin.add_levels');
 Route::post('/admin/show_levels',[LevelController::class,'level_store'])->name('level.store');
 
+Route::get('/admin/add_combination',[CombinationController::class,'add_combination'])->name('admin.add_combination');
+Route::post('admin/show_combination',[CombinationController::class,'combination_store'])->name('combination.store');
+
+Route::get('/admin/add_semester',[SemesterController::class,'add_semester'])->name('admin.add_semester');
+Route::post('admin/show_semester',[SemesterController::class,'semester_store'])->name('semester.store');
+
+
 
 
 Route::get('/notification',[NotificationController::class, 'index'])->name('notification.index');
@@ -97,4 +108,7 @@ Route::post('admin/subcourse/process', [SubcourseController::class, 'processForm
 Route::get('admin/subcourse/show', [SubcourseController::class, 'showSubjects'])->name('admin.subcourse.show');
                                                                                                        
 Route::get('/admin/show_levels',[LevelController::class,'show_levels'])->name('admin.show_levels');
-Route::delete('/admin/show_levels/{level}/destroy',[LevelController::class,'destroy'])->name('level.destroy');
+Route::delete('/admin/show_levels/{level}/destroy',[LevelController::class,'destroy'])->name('level.destroy'); 
+
+Route::get('admin/add_syllabus', [SyllabusController::class, 'add'])->name('admin.add_syllabus');
+Route::post('admin/syllabus_process', [SyllabusController::class, 'process']);
