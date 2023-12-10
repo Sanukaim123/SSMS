@@ -10,8 +10,8 @@ body{
     font-family: "Poppins-Regular";
     font-size: 15px;
     color: #160b0b;
-    margin: 100;
-    margin-bottom: 300;
+    margin:100;
+    margin-bottom:400;
     background: #654ea3;
     background: linear-gradient(to right, #e96443, #904e95);
     min-height: 100vh;
@@ -66,10 +66,11 @@ input, textarea, select, button{
 #wizard{
     min-height: 570px;
     background: #fff;
-    margin-right: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
     padding: 107px 75px 65px;
-    margin-top: 20px;
-    margin-bottom: 20px
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h3{

@@ -13,11 +13,12 @@
 <div class="wrapper">
     <form  method="post" action="{{     route('repeats.store')   }}"  enctype="multipart/form-data">
         @csrf
-        
+        <h1>UNIVERSITY OF RUHUNA - MATARA</h1>
+            <h2>Paying in Voucher</h2>
         <div id="wizard">
 
             <!-- SECTION 1 -->
-            <h4></h4>
+          
             <section>
             
 
@@ -38,6 +39,17 @@
                 <label for="full_name" >Amount:</label>
                      <input type="text" name="amount" class="form-control" placeholder="Amount" required>
                 </div>
+
+                <div class="dropdown">
+                <label for="degree">Choose a degree:</label>
+                    <select name="degree" id="degree">
+                    <option class="dropdown-btn" value="basic">Basic Degree</option>
+                    <option class="dropdown-btn" value="post">Postgraduation Degree</option>
+                    </select>
+                </div>
+
+
+
                 <div class="form-row">
                 <label for="description" >Course Unit Name and code:</label>
                     <textarea name="description" rows="10" class="form-control" placeholder="Note about Course Units" style="height: 108px">
