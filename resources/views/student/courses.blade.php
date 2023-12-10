@@ -1,137 +1,136 @@
 <!DOCTYPE html>
-<head>
-<link rel="stylesheet" href="{{asset('CSS/custom.css')}}"/>
-	<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css/>  
-	
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	
-	<style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
-}
-body{
-    min-height: 100vh;
-}
-a{
-    text-decoration: none;
-}
-li{
-    list-style: none;
-}
-h1,h2{
-    color: #1c0310;
-}
-.side-menu{
-    position:fixed;
-    background: #c56ca6; 
-    width: 20vw;
-    min-height:100vh ; 
-    display: flex;
-    flex-direction: column;
-}
-
-.side-menu .brand-name{
-    height:10vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.side-menu li{
-    font-size: 20px;
-    padding: 10px 50px;
-    color: #df54b1cc;
-    display:flex;
-    align-items:center;
-    
-
-}
-.side-menu li:hover{
-    background: white;  
-    color: #b43e8c;
-}
-
-
-    </style>
-</head>
-
-<nav id="navbar">
-		<div class="navdiv">
-			<div class="main-topic"><a href="#">Students' Self Study-Management System</a>
-			<br>
-
-				<div class="sub-topic">SSMS</div>
-				
-			</div>
-			<ul>
-				<li><a href="home">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="Contact">Contact</a></li>
-				
-				
-			</ul>
-		</div>
-	</nav>
-</head>
-<body>
-
-<div class="page-content">  
-<!--features-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-4 d-flex justify-content-center align-items-center">
-      <div class="card text-center">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-          <h5 class="card-header">Combination 01</h5> <br> 
-          <a href="" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Mathematics</a> <br> <br> 
-          <a href="" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Applied Mathematics</a> <br> <br> 
-          <a href="" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Computer Science</a>
+<div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
+                    class=""></i>SSMS</div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fa fa-star me-2"></i> Syllabus </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fa fa-book me-2"></i>My Courses </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-chart-line me-2"></i>Results and GPA </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fa fa-calendar me-2"></i> Attendance</a> 
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fa fa-credit-card me-2"></i>Payments</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fa fa-bell me-2"></i> Notifications</a> 
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                        class="fas fa-power-off me-2"></i>Logout</a> 
+            </div>
         </div>
-      </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            
+
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-2">
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h4 class="fs-2"></h4> <br> 
+                                 <a href="{{route('student.combinations')}}" class="btn btn-primary"> Syllabus </a>   
+                            </div>
+                            <i class="fa fa-star  fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div> 
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h4 class="fs-2">  </h4> <br> 
+                                <p> <button type="button" class="btn btn-success">My Courses</button> </p>
+                            </div>
+                            <i
+                                class="fa fa-book fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div> 
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h4 class="fs-2">  </h4> <br> 
+                                <p>  <button type="button" class="btn btn-success">  Results  </button> </p>
+                            </div>
+                            <i class="fas fa-chart-line fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h4 class="fs-2">  </h4> <br> 
+                                <p>  <button type="button" class="btn btn-success"> Attendance</button> </p>
+                            </div>
+                            <i class="fa fa-calendar fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>   
+
+
+                    <br> <br> 
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h4 class="fs-2"> </h4>
+                                <p>  <button type="button" class="btn btn-success"></button> </p>
+                            </div>
+                            <i class=" fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h4 class="fs-2"></h4>
+                                <p>  <button type="button" class="btn btn-success"></button> </p>
+                            </div>
+                            <i
+                                class=" fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h4 class="fs-2"></h4>
+                                <p>  <button type="button" class="btn btn-success"></button> </p>
+                            </div>
+                            <i class=" fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h4 class="fs-2"></h4>
+                                <p>  <button type="button" class="btn btn-success"></button> </p>
+                            </div>
+                            <i class=" fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+               
+
+
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
     </div>
 
-    <div class="col-md-4 d-flex justify-content-center align-items-center">
-  <div class="card text-center">
-    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-      <h5 class="card-header">Combination 02</h5> <br> 
-      <a href="" class="btn btn-success btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Mathematics</a> <br> <br> 
-      <a href="" class="btn btn-success btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Physics</a> <br> <br> 
-      <a href="" class="btn btn-success btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Computer Science </a>
-    </div>
-  </div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
 
-<div class="col-md-4 d-flex justify-content-center align-items-center">
-  <div class="card text-center">
-    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-      <h5 class="card-header">Combination 03</h5> <br> 
-      <a href="" class="btn btn-info btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Mathematics</a> <br> <br> 
-      <a href="" class="btn btn-info btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Chemistry</a> <br> <br> 
-      <a href="" class="btn btn-info btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Computer Science </a>
-    </div>
-  </div>
-</div>
-
-<br>
-<br>
-<br>
-
-<div id="footer" style="background-color: #333; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;">
-
-
-<p>&copy; 2024 Self study Management system</p>
-
-
-<li><a href="https://example.com">UOR Oficial Web</a></li>
-<li><a href="https://example2.com">UOR Library</a></li>
-<li><a href="https://example3.com">LMS</a></li>
-<li><a href="https://example3.com">FOSMIS</a></li>
-
-</div>
-</div>
-
-</body>
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
 </html>
