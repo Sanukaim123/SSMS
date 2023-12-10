@@ -8,6 +8,9 @@ use App\Http\Controllers\LecturerController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Course_unitController;
 use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\LevelController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +29,8 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -63,6 +68,7 @@ Route::view('/courses','student.courses');
 Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
 
+
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
 Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->name('admin.show_subjects');
 Route::post('/admin/show_subjects',[SubjectController::class,'sub_store'])->name('subject.store');
@@ -74,6 +80,10 @@ Route::post('/admin/show_courses',[Course_unitController::class,'course_store'])
 Route::delete('/admin/show_courses/{course}/destroy',[Course_unitController::class,'destroy'])->name('course.destroy');
 Route::get('/admin/show_courses/{course}/edit',[Course_unitController::class,'edit'])->name('course.edit');
 Route::put('/admin/show_courses/{course}/update',[Course_unitController::class,'update'])->name('course.update');
+
+Route::get('/admin/level_list',[LevelController::class,'level_list'])->name('admin.level_list');
+Route::get('/admin/add_levels',[LevelController::class,'add-levels'])->name('admin.add_levels');
+Route::post('/admin/show_levels',[LevelController::class,'level_store'])->name('level.store');
 
 
 

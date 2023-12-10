@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    @include('layouts.head')
-</head>
-<body>
-    <navbar>
-	    @include('layouts.nav')
-    </navbar>
+@extends('admin.admindashboard')
+@section('admin')
+<div class="page-content">
 <h1>Add Subjects</h1>
     <div>
         @if($errors->any())
@@ -18,7 +12,7 @@
         @endif
     </div>
 
-<section id="add_sub">
+
         
     <form method="post" action="{{route('subject.store')}}">
         @csrf
@@ -40,9 +34,6 @@
 
 
 
-
+@endsection
     
     
-</body>
-    
-</html>
