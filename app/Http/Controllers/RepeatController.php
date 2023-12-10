@@ -9,7 +9,7 @@ class RepeatController extends Controller
     public function index(){
         $repeats=Repeat::all();
         return view('student.money_transfer.payment_form',['repeats'=>$repeats]);
-    }
+    } 
 
     public function store(Request $request){
       $data=$request->validate([
