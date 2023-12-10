@@ -9,6 +9,7 @@ use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Course_unitController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\LevelController;
+use App\Http\Controllers\SubcourseController;
 
 
 /*
@@ -89,5 +90,11 @@ Route::post('/admin/show_levels',[LevelController::class,'level_store'])->name('
 
 Route::get('/notification',[NotificationController::class, 'index'])->name('notification.index');
 Route::get('/notification',[NotificationController::class, 'create'])->name('notification');
-Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');  
+Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');
+
+Route::get('admin/subcourse/form', [SubcourseController::class, 'createForm'])->name('admin.subcourse.form');
+Route::post('admin/subcourse/process', [SubcourseController::class, 'processForm']);
+Route::get('admin/subcourse/show', [SubcourseController::class, 'showSubjects'])->name('admin.subcourse.show');
                                                                                                        
+Route::get('/admin/show_levels',[LevelController::class,'show_levels'])->name('admin.show_levels');
+Route::delete('/admin/show_levels/{level}/destroy',[LevelController::class,'destroy'])->name('level.destroy');
