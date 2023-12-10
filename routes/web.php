@@ -9,6 +9,7 @@ use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Course_unitController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\LevelController;
+use App\Http\Controllers\feedbackcontroller;
 
 
 /*
@@ -65,6 +66,7 @@ Route::view('/cdn','cdn');
 Route::view('/courses','student.courses');
 Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
+Route::view('/studentfeedback','studentfeedback');
 
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
 Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->name('admin.show_subjects');
@@ -87,4 +89,6 @@ Route::post('/admin/show_levels',[LevelController::class,'level_store'])->name('
 Route::get('/notification',[NotificationController::class, 'index'])->name('notification.index');
 Route::get('/notification',[NotificationController::class, 'create'])->name('notification');
 Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');  
+
+Route::post('/studentfeedback',[feedbackcontroller::class,'studentfeedback']);
                                                                                                        
