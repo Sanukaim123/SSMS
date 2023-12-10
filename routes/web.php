@@ -96,3 +96,5 @@ Route::get('admin/subcourse/form', [SubcourseController::class, 'createForm'])->
 Route::post('admin/subcourse/process', [SubcourseController::class, 'processForm']);
 Route::get('admin/subcourse/show', [SubcourseController::class, 'showSubjects'])->name('admin.subcourse.show');
                                                                                                        
+Route::get('/admin/show_levels',[LevelController::class,'show_levels'])->name('admin.show_levels');
+Route::delete('/admin/show_levels/{level}/destroy',[LevelController::class,'destroy'])->name('level.destroy');
