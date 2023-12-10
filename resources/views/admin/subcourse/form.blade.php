@@ -10,7 +10,7 @@
     <form action="{{ url('admin/subcourse/process') }}" method="post">
             @csrf
             
-            <label for="S_Code">Select Student:</label>
+            <label for="S_Code">Select Subject:</label>
             <select name="S_Code" id="S_Code">
                 @foreach($subjects as $id => $sCode)
                     <option value="{{ $sCode }}">{{ $sCode }}</option>
