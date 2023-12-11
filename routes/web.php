@@ -72,11 +72,11 @@ Route::view('/courses','student.courses');
 Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
 Route::view('/student/courses','student.courses');
-Route::view('/applied','student.subject.applied');
-Route::view('/cs','student.subject.cs');
-Route::view('/math','student.subject.math');
-Route::view('/chem','student.subject.chem');
-Route::view('/physics','student.subject.physics');
+Route::view('/student/subject/applied','student.subject.applied');
+Route::view('/student/subject/cs','student.subject.cs');
+Route::view('/student/subject/math','student.subject.math');
+Route::view('/student/subject/chem','student.subject.chem');
+Route::view('/student/subject/physics','student.subject.physics');
 
 
 
