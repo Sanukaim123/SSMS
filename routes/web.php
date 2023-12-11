@@ -72,7 +72,7 @@ Route::view('/courses','student.courses');
 Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
 Route::view('/student/courses','student.courses');
-Route::view('/applied','student.subject.applied');
+Route::view('student/subject/applied','student.subject.applied');
 
 
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
