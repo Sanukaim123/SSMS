@@ -98,12 +98,16 @@ Route::post('/notification',[NotificationController::class, 'store'])->name('not
 
 //money transfer
 
-//Route::get('/student/money_transfer/download_form',[ShowController::class,'showData'])->name('student.money_transfer.download_form');
-//Route::post('/forms/store',[Form1Controller::class,'store'])->name('forms.store');
 Route::get('/student/money_transfer/payment_form',[RepeatController::class,'index'])->name('student.money_transfer.payment_form');
 Route::post('/repeats/store',[RepeatController::class,'store'])->name('repeats.store');
+Route::get('/student/money_transfer/download_form',[RepeatController::class,'downloadForm'])->name('student.money_transfer.download_form');
 
-//Route::post('/student/money_transfer/form1',[Form1Controller::class,'store'] );
+
+Route::view('/student/money_transfer/payment_home','student.money_transfer.payment_home');
+//Route::view('/student/money_transfer/payment_form','student.money_transfer.payment_form');
+Route::view('/student/money_transfer/payment_pay','student.money_transfer.payment_pay');
+//Route::view('/student/money_transfer/download_form','student.money_transfer.download_form');
+
 
 
 Route::post('pay',[PaymentController::class,'pay'])->name('payment');
@@ -111,8 +115,4 @@ Route::get('success',[PaymentController::class,'success']);
 Route::get('error',[PaymentController::class,'error']);
 
 
-Route::view('/student/money_transfer/payment_home','student.money_transfer.payment_home');
-//Route::view('/student/money_transfer/payment_form','student.money_transfer.payment_form');
-Route::view('/student/money_transfer/payment_pay','student.money_transfer.payment_pay');
-//Route::view('/student/money_transfer/download_form','student.money_transfer.download_form');
 

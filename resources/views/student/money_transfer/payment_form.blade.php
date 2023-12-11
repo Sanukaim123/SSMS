@@ -20,9 +20,7 @@
             <!-- SECTION 1 -->
           
             <section>
-            
-
-
+        
                 <div class="form-row">
                 <label for="full_name" >Full Name:</label>
                      <input type="text" name="full_name" class="form-control" placeholder="Johne Alexsender" required>
@@ -40,14 +38,35 @@
                      <input type="text" name="amount" class="form-control" placeholder="Amount" required>
                 </div>
 
+                <!-- degree in dropdown -->
+
                 <div class="dropdown">
                 <label for="degree">Choose a degree:</label>
                     <select name="degree" id="degree">
-                    <option class="dropdown-btn" value="basic">Basic Degree</option>
-                    <option class="dropdown-btn" value="post">Postgraduation Degree</option>
+                    <option name="degree" class="dropdown-btn" value="Basic Degree">Basic Degree</option>
+                    <option name="degree" class="dropdown-btn" value="Postgraduation Degree">Postgraduation Degree</option>
                     </select>
                 </div>
 
+                        <!-- degree in checkbox 
+                                <div class="row g-3 align-items-center" style="padding: 1.5%;">
+                                    <div class="col-md-2">
+                                     <label for="inputPassword6" class="col-form-label">Choose a degree:</label>
+                                    </div>
+
+                                    <div class="row g-3 align-items-center" style="padding: 1.5%;">
+                                        <div class="col-md-2">
+                                        <input class="form-check-input" type="checkbox" name="degree[]" value="Basic Degree" id="flexCheckBasic">
+                                        <label class="form-check-label" for="flexCheckBasic">Basic Degree</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-check-input" type="checkbox" name="degree[]" value="Postgraduation Degree" id="flexCheckPostgraduation">
+                                            <label class="form-check-label" for="flexCheckPostgraduation">Postgraduation Degree</label>
+                                        </div>
+                                        
+                                     </div>
+                                </div>
+                        -->
 
 
                 <div class="form-row">
@@ -55,41 +74,36 @@
                     <textarea name="description" rows="10" class="form-control" placeholder="Note about Course Units" style="height: 108px">
                     </textarea> 
                 </div>
-            </section> 
-            
-            <!-- SECTION 2 -->
-            
-
-                
-
-                        
-                </fieldset>
-                <br>
-                <div>
-                    <input type="file" name="file">
-                </div>
-                        
-
-                
-                </div>
             </section>
             
+            
+            </div>
+    
             
             <!-- SECTION 4 -->
             <section>
                 <div class="btn1"> 
-    
                     <button class="btn_sub" type="submit">Submit</button>
-                
                 </div>
-
-                
-                
             </section>
-        
-        </div>
-    </form>
+            </form>
+            <section>
+            <div class="btn1"> 
+                    <button  id="print">Print</button>
+                </div> 
+            </section>
+           
+       
 </div>
+<script>
+
+const printBtn=document.getElementById('print');
+printBtn.addEvenListener('click',function(){
+    window.print();
+})
+
+
+</script>
 </body>
 </html>
 

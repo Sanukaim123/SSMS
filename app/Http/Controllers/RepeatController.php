@@ -7,10 +7,11 @@ use App\Models\Repeat;
 class RepeatController extends Controller
 {
     public function index(){
-        $repeats=Repeat::all();
-        return view('student.money_transfer.payment_form',['repeats'=>$repeats]);
+        
+        return view('student.money_transfer.payment_form');
     } 
 
+    //store data into the database
     public function store(Request $request){
       $data=$request->validate([
         'full_name'=>'required',
@@ -20,8 +21,22 @@ class RepeatController extends Controller
         'degree'=>'required',
         'description'=>'required',
       ]);
-       
-      $newRepeat=Repeat::create($data);
-      return redirect(route('/student/money_transfer/payment_pay')); 
-    }     
+
+      $repeat =new Repeat();
+      $repeat->full_name = $request->input('full_name');
+      $repeat->student_num = $request->input('student_num');
+      $repeat->address = $request->input('address');
+      $repeat->amount = $request->input('amount');
+      $repeat->degree= $request->input('degree');
+      $repeat->description =$request->input('description');
+      $repeat->save();
+
+      
+      
+      return redirect('student/money_transfer/payment_pay'); 
+    }
+
+
+
+        
 }

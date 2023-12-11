@@ -11,16 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('repeats', function (Blueprint $table) {
+        Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('full_name');
-            $table->string('student_num');
-            $table->string('address');
-            $table->integer('amount');
-            $table->string('degree');
-            $table->text('description');
             $table->timestamps();
-            
         });
     }
 
@@ -29,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('repeats');
+        Schema::dropIfExists('payments');
     }
 };
