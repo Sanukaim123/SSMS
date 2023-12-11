@@ -1,3 +1,4 @@
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -7,6 +8,12 @@
 
     
     <head>
+
+
+
+
+
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -62,6 +69,7 @@
                 <div class="d-flex align-items-center">
                     <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
                     <h2 class="fs-2 m-0">Dashboard</h2>
+
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -85,6 +93,7 @@
                         </li>
                     </ul>
                 </div>
+
             </nav>
 
             <div class="container-fluid px-4">
@@ -93,6 +102,7 @@
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <div>
                                 <h4 class="fs-2"></h4> <br> 
+
                                  <a href="{{route('student.courses')}}" class="btn btn-primary"> Syllabus </a>   
                             </div>
                             <i class="fa fa-star  fs-1 primary-text border rounded-full secondary-bg p-3"></i>
@@ -191,6 +201,7 @@
             el.classList.toggle("toggled");
         };
     </script>
+
 <div id="footer" style="background-color: #333; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;">
 
 
@@ -205,3 +216,4 @@
 </div>
     </body>
 </x-app-layout>
+

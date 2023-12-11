@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Models\Combination;
 
 class CombinationController extends Controller
@@ -27,6 +28,7 @@ class CombinationController extends Controller
     {
         return view('student.courses');
     }
+
 
 
 
