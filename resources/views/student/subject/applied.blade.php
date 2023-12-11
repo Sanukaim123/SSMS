@@ -8,13 +8,31 @@
 	
    
 <link rel="stylesheet" href="{{asset('CSS/subject/applied.css')}}">
-
+<link rel="stylesheet" href="{{asset('CSS/custom.css')}}"/>
+	<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css/>
 
         <title>Front end</title>
        
         
     </head>
     <body>
+	<nav id="navbar">
+            <div class="navdiv">
+                <div class="main-topic"><a href="#">Students' Study-Management System</a>
+                <br>
+
+                    <div class="sub-topic">SSMS</div>
+                    
+                </div>
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                    <button><a href="{{route('register')}}">Signup</a></button>
+                    <button><a href="{{route('login')}}">Login</a></button>
+                </ul>
+            </div>
+        </nav>
 	
 
 		<h1> Applied Mathematics</h1>
