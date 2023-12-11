@@ -86,9 +86,9 @@ h1,h2{
       <div class="card text-center">
         <div class="card-body d-flex flex-column align-items-center justify-content-center">
           <h5 class="card-header">Combination 01</h5> <br> 
-          <a href="" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Mathematics</a> <br> <br> 
+          <a href="/student/subject/math" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Mathematics</a> <br> <br> 
           <a href="/student/subject/applied" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Applied Mathematics</a> <br> <br> 
-          <a href="" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Computer Science</a>
+          <a href="/student/subject/cs" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Computer Science</a>
         </div>
       </div>
     </div>
@@ -97,9 +97,9 @@ h1,h2{
   <div class="card text-center">
     <div class="card-body d-flex flex-column align-items-center justify-content-center">
       <h5 class="card-header">Combination 02</h5> <br> 
-      <a href="" class="btn btn-success btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Mathematics</a> <br> <br> 
-      <a href="" class="btn btn-success btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Physics</a> <br> <br> 
-      <a href="" class="btn btn-success btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Computer Science </a>
+      <a href="/student/subject/math" class="btn btn-success btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;"> Mathematics </a> <br> <br> 
+      <a href="/student/subject/physics" class="btn btn-success btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Physics</a> <br> <br> 
+      <a href="/student/subject/cs" class="btn btn-success btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Computer Science </a>
     </div>
   </div>
 </div>
@@ -108,9 +108,9 @@ h1,h2{
   <div class="card text-center">
     <div class="card-body d-flex flex-column align-items-center justify-content-center">
       <h5 class="card-header">Combination 03</h5> <br> 
-      <a href="" class="btn btn-info btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Mathematics</a> <br> <br> 
-      <a href="" class="btn btn-info btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Chemistry</a> <br> <br> 
-      <a href="" class="btn btn-info btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Computer Science </a>
+      <a href="/student/subject/math" class="btn btn-info btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Mathematics</a> <br> <br> 
+      <a href="/student/subject/chem" class="btn btn-info btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Chemistry</a> <br> <br> 
+      <a href="/student/subject/cs" class="btn btn-info btn-custom btn-lg text-white" style="width: 10cm; height: 2cm;">Computer Science </a>
     </div>
   </div>
 </div>
