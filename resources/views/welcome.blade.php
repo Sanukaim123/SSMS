@@ -89,20 +89,18 @@
 </section>
 
 <!--footer-->
-<div id="footer">
+<div id="footer" style="background-color: #333; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;">
 
 
-        <p>&copy; 2024 Self study system</p>
-    
-    
-        <li><a href="https://example.com">UOR Oficial Web</a></li>
-        <li><a href="https://example2.com">UOR Libry</a></li>
-        <li><a href="https://example3.com">LMS</a></li>
-        <li><a href="https://example3.com">FOSMIS</a></li>
-    
+<p>&copy; 2024 Self study Management system</p>
+
+
+<li><a href="https://example.com">UOR Oficial Web</a></li>
+<li><a href="https://example2.com">UOR Library</a></li>
+<li><a href="https://example3.com">LMS</a></li>
+<li><a href="https://example3.com">FOSMIS</a></li>
+
 </div>
-
-
 
 
 </body>
