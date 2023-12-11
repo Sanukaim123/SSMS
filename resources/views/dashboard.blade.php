@@ -93,7 +93,7 @@
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <div>
                                 <h4 class="fs-2"></h4> <br> 
-                                 <a href="" class="btn btn-primary"> Syllabus </a>   
+                                 <a href="{{route('student.courses')}}" class="btn btn-primary"> Syllabus </a>   
                             </div>
                             <i class="fa fa-star  fs-1 primary-text border rounded-full secondary-bg p-3"></i>
                         </div> 
