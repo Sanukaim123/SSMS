@@ -9,6 +9,7 @@ use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Course_unitController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\LevelController;
+use App\Http\Controllers\SubcourseController;
 use App\Http\Controllers\RepeatController;
 use App\Http\Controllers\PaymentController;
 
@@ -94,25 +95,3 @@ Route::get('/notification',[NotificationController::class, 'index'])->name('noti
 Route::get('/notification',[NotificationController::class, 'create'])->name('notification');
 Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');  
                                                                                                        
-
-
-//money transfer
-
-Route::get('/student/money_transfer/payment_form',[RepeatController::class,'index'])->name('student.money_transfer.payment_form');
-Route::post('/repeats/store',[RepeatController::class,'store'])->name('repeats.store');
-Route::get('/student/money_transfer/download_form',[RepeatController::class,'downloadForm'])->name('student.money_transfer.download_form');
-
-
-Route::view('/student/money_transfer/payment_home','student.money_transfer.payment_home');
-//Route::view('/student/money_transfer/payment_form','student.money_transfer.payment_form');
-Route::view('/student/money_transfer/payment_pay','student.money_transfer.payment_pay');
-//Route::view('/student/money_transfer/download_form','student.money_transfer.download_form');
-
-
-
-Route::post('pay',[PaymentController::class,'pay'])->name('payment');
-Route::get('success',[PaymentController::class,'success']);
-Route::get('error',[PaymentController::class,'error']);
-
-
-

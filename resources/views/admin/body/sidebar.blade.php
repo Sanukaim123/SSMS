@@ -170,10 +170,10 @@
                   <a href="{{route('admin.add_course_units')}}" class="nav-link">Add Course Units</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/forms/editors.html" class="nav-link">Add users</a>
+                  <a href="{{route('admin.subcourse.form')}}" class="nav-link">Assign Course units to Subject</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/forms/wizard.html" class="nav-link">Wizard</a>
+                  <a href="pages/forms/wizard.html" class="nav-link">Add Attendance</a>
                 </li>
               </ul>
             </div>
