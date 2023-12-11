@@ -23,4 +23,11 @@ class CombinationController extends Controller
         return redirect(route('admin.show_combinations'));  
     }
 
+    public function show()
+    {
+        return view('student.courses');
+    }
+
+
+
 }

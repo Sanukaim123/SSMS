@@ -71,6 +71,7 @@ Route::view('/cdn','cdn');
 Route::view('/courses','student.courses');
 Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
+Route::view('/student/courses','student.courses');
 
 
 
@@ -109,6 +110,8 @@ Route::get('admin/subcourse/show', [SubcourseController::class, 'showSubjects'])
                                                                                                        
 Route::get('/admin/show_levels',[LevelController::class,'show_levels'])->name('admin.show_levels');
 Route::delete('/admin/show_levels/{level}/destroy',[LevelController::class,'destroy'])->name('level.destroy'); 
+Route::get('/student/courses',[CombinationController::class,'show'])->name('student.courses');
 
 Route::get('admin/add_syllabus', [SyllabusController::class, 'add'])->name('admin.add_syllabus');
 Route::post('admin/syllabus_process', [SyllabusController::class, 'process']);
+
