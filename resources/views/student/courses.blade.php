@@ -87,7 +87,7 @@ h1,h2{
         <div class="card-body d-flex flex-column align-items-center justify-content-center">
           <h5 class="card-header">Combination 01</h5> <br> 
           <a href="" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Mathematics</a> <br> <br> 
-          <a href="" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Applied Mathematics</a> <br> <br> 
+          <a href="/student/subject/applied" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Applied Mathematics</a> <br> <br> 
           <a href="" class="btn btn-primary btn-custom btn-lg" style="width: 10cm; height: 2cm;">Computer Science</a>
         </div>
       </div>
