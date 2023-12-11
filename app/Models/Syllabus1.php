@@ -9,7 +9,7 @@ class Syllabus1 extends Model
 {
     use HasFactory;
     protected $fillable=[
-        'Combination_name',
+        'S_Code',
         'Level',
         'Semester_name',
         'Course_Code'

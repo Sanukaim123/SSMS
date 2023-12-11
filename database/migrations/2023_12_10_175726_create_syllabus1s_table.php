@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('syllabus1s', function (Blueprint $table) {
             $table->id();
-            $table->char('Combination_name',3);
+            $table->char('S_Code',3);
             $table->char( 'Level',10);
             $table->char('Semester_name',3);
             $table->char('Course_Code',10);
