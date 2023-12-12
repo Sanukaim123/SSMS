@@ -123,3 +123,10 @@ Route::get('/student/courses',[CombinationController::class,'show'])->name('stud
 Route::get('admin/add_syllabus', [SyllabusController::class, 'add'])->name('admin.add_syllabus');
 Route::post('admin/syllabus_process', [SyllabusController::class, 'process']);
 
+
+
+
+
+use App\Http\Controllers\St_resultController;
+
+Route::post('/student/upload', [St_resultController::class, 'store'])->name('student.upload');
