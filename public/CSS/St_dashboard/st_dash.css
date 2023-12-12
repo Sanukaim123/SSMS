@@ -18,7 +18,7 @@
   }
   
   .secondary-bg {
-    background-color: var(--second-bg-color);
+    background-color: #904e95;
   }
   
   .rounded-full {
@@ -60,8 +60,11 @@
   }
   
   .list-group-item {
-    border: none;
+    border: 1;
     padding: 20px 30px;
+  }
+  .bg-white{
+    background-color:aqua;
   }
   
   .list-group-item.active {

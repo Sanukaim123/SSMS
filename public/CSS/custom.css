@@ -2,19 +2,19 @@ img{
 	width: 100px;
   height:100px;
 }
-body {
-  margin: 0;
-  font-family: calibri;
+body{
+  font-family: calibri; 
 }
+
 #main {
-    height: 1000px;
-    width: 100px;
+    height: 500px;
+    width: 1400px;
     background: radial-gradient(#653d84, #332042);
     position: relative;
 }
 #login_box {
-    width: 700px;
-    height: 520px;
+    width: 720px;
+    height: 480px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -139,12 +139,12 @@ body {
   font-family: calibri; 
   padding-right:15px;
   padding-left:15px;
-  padding-top: 30px; 
-  height:120px; 
+  padding-top: 30px;
+  height:150px; 
   box-shadow:2px 2px 10px rgba(20, 9, 9, 0.15);
-  width: 98%;
+  width: 100%;
   position: sticky;
-  top: 0;
+  
 }
 .navdiv{
   display: flex; 
@@ -333,6 +333,8 @@ div.transbox p {
   font-weight: bold;
   color: #000000;
 }
+
+
 
 /*footer*/
 #footer {

@@ -14,6 +14,7 @@
 }
 body{
     min-height: 100vh;
+    background: linear-gradient(to right, #e96443, #904e95);
 }
 a{
     text-decoration: none;
@@ -77,7 +78,7 @@ h1,h2{
 	</nav>
 </head>
 <body>
-
+<br>
 <div class="page-content">  
 <!--features-->
 <div class="container-fluid">
@@ -114,12 +115,18 @@ h1,h2{
     </div>
   </div>
 </div>
+<br><br><br><br><br>
+<br>
+<br>
+<br>
+<br><br><br><br>
+<br><br><br><br><br>
+<br>
+<br>
+<br>
+<br><br><br><br>
 
-<br>
-<br>
-<br>
-
-<div id="footer" style="background-color: #333; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;">
+<div id="footer" style="background-color: #333; padding: 10px; text-align: center;  bottom: 0; width: 100%;">
 
 
 <p>&copy; 2024 Self study Management system</p>

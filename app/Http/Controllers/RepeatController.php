@@ -10,6 +10,11 @@ class RepeatController extends Controller
         
         return view('student.money_transfer.payment_form');
     } 
+    public function home(){
+        
+      return view('student.money_transfer.payment_home');
+  } 
+
 
     //store data into the database
     public function store(Request $request){
