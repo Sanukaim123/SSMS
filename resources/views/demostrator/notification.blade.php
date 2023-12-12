@@ -36,12 +36,13 @@
     <div class="select-group"> 
     <label for="subject"> </label>
     <select id="subject" name="subject" required>
-            <option value="mathematics">Mathematics</option>
+    <option value="mathematics">Mathematics</option>
             <option value="applied mathematics">Applied Mathematics</option>
             <option value="computer science">Computer Science</option>
             <option value="chemistry">Chemistry</option>
             <option value="physics">Physics</option>
 </select>
+    </select>
 </div>
 <br>
 <br>
