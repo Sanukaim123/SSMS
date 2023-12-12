@@ -42,6 +42,16 @@
             <option value="chemistry">Chemistry</option>
             <option value="physics">Physics</option>
 </select>
+</div>
+<br>
+<br>
+<div class="select-group"> 
+    <label for="level"> </label>
+    <select id="level" name="level" required>
+    <option value="level1">Level 1</option>
+            <option value="level2">Level 2</option>
+            <option value="level3">Level 3</option>
+
     </select>
 </div>
 <br>
@@ -49,13 +59,15 @@
 
     <div class="row"> 
       <div class="select-group" >
-            <label for="level"> </label>
-            <select id="level" name="level" required>
-            <option value="level1">Level 1</option>
-            <option value="level2">Level 2</option>
-            <option value="level3">Level 3</option>
+            <label for="semester"> </label>
+            <select id="semester" name="semester" required>
+            <option value="semester1">Semester 1</option>
+            <option value="semester2">Semester 2</option>
+            
 </select>
 </div> 
+<br>
+<br>
     
         <div class="select-group">
             <label for="course"></label>

@@ -15,6 +15,7 @@ protected $fillable = [
     'add_description',
     'subject',
     'level',
+    'semester',
     'course',
     'final_submission_date'];
 }

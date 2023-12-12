@@ -24,6 +24,7 @@ class NotificationController extends Controller
             'add_description'=>'required|string|max:255',
             'subject'=>'required|string|max:255',
             'level'=>'required',
+            'semester'=>'required',
             'course'=>'required',
             'final_submission_date'=>'required'
     
@@ -37,6 +38,7 @@ class NotificationController extends Controller
         $notification->add_description = $request->input('add_description');
         $notification->subject = $request->input('subject');
         $notification->level = $request->input('level');
+        $notification->semester = $request->input('semester');
         $notification->course= $request->input('course');
         $notification->final_submission_date =$request->input('final_submission_date');
         $notification->save();
