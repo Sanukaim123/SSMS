@@ -1,7 +1,8 @@
 
 <x-app-layout>
+    
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight" >
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
@@ -209,7 +210,7 @@
         };
     </script>
 
-<div id="footer" style="background-color: #333; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;">
+<div id="footer" style="background-color: #333; padding: 10px; text-align: center; height:80px; bottom: 0; width: 100%;">
 
 
 <p>&copy; 2024 Self study Management system</p>

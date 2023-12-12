@@ -26,7 +26,7 @@
 				<li><a href="home">Home</a></li>
 				<li><a href="">About</a></li>
 				<li><a href="Contact">Contact</a></li>
-				<button><a href="{{route('register')}}">SignIn</a></button>
+				<button><a href="{{route('register')}}">SignIn</a></button>&nbsp&nbsp
 				<button><a href="{{route('login')}}">Login</a></button>
 			</ul>
 		</div>
@@ -83,15 +83,16 @@
 	<h1>Department</h1>
 	<p>University of Ruhuna,Faculty of Science has five departments.
 		They are Mathemetics,Physics,Chemistry,Computer Science</p>
+		<br>
 		<div class=dep-box>
 
 		</div>
 </section>
 
 <!--footer-->
-<div id="footer" style="background-color: #333; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;">
+<div id="footer" style="background-color: #333; padding: 10px; text-align: center;  bottom: 0;height:80px; width: 99%;">
 
-
+<br>
 <p>&copy; 2024 Self study Management system</p>
 
 
