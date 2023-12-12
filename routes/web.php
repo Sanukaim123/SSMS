@@ -78,19 +78,6 @@ Route::view('/notification','demostrator.notification');
 
 Route::view('/studentfeedback','studentfeedback');
 
-Route::view('/student/courses','student.courses');
-
-Route::view('/student/subject/applied','student.subject.applied');
-Route::view('/student/subject/cs','student.subject.cs');
-Route::view('/student/subject/math','student.subject.math');
-Route::view('/student/subject/chem','student.subject.chem');
-Route::view('/student/subject/physics','student.subject.physics');
-
-
-
-
-
-
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
 Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->name('admin.show_subjects');
 Route::post('/admin/show_subjects',[SubjectController::class,'sub_store'])->name('subject.store');
@@ -123,18 +110,3 @@ Route::get('/notification',[NotificationController::class, 'create'])->name('not
 
 Route::post('/studentfeedback',[feedbackcontroller::class,'studentfeedback']);
                                                                                                        
-
-Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');
-
-Route::get('admin/subcourse/form', [SubcourseController::class, 'createForm'])->name('admin.subcourse.form');
-Route::post('admin/subcourse/process', [SubcourseController::class, 'processForm']);
-Route::get('admin/subcourse/show', [SubcourseController::class, 'showSubjects'])->name('admin.subcourse.show');
-                                                                                                       
-Route::get('/admin/show_levels',[LevelController::class,'show_levels'])->name('admin.show_levels');
-Route::delete('/admin/show_levels/{level}/destroy',[LevelController::class,'destroy'])->name('level.destroy'); 
-Route::get('/student/courses',[CombinationController::class,'show'])->name('student.courses');
-
-Route::get('admin/add_syllabus', [SyllabusController::class, 'add'])->name('admin.add_syllabus');
-Route::post('admin/syllabus_process', [SyllabusController::class, 'process']);
-
-
