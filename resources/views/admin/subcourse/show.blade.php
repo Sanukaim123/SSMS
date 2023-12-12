@@ -37,7 +37,6 @@
         }
     </style>
 
-
     <h2>Course Units and Relevant Subjects</h2>
 ABC
 </body>

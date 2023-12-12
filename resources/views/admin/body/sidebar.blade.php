@@ -175,6 +175,7 @@
                 </li>
                 <li class="nav-item">
                   <a href="pages/forms/wizard.html" class="nav-link">Add Attendance</a>
+
                 </li>
                 <li class="nav-item">
                   <a href="{{route('admin.add_combination')}}" class="nav-link">Add Combination</a>
@@ -187,6 +188,7 @@
                 </li>
                 <li class="nav-item">
                   <a href="{{route('admin.add_semester')}}" class="nav-link">Add Semester</a>
+
                 </li>
               </ul>
             </div>
