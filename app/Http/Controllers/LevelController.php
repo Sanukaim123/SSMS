@@ -30,4 +30,13 @@ class LevelController extends Controller
         return redirect(route('admin.show_levels'));
     }
 
+    public function show_levels(){
+        $levels=Level::all();
+        return view('admin.show_levels',['levels'=>$levels]);
+    }
+    public function destroy(Level $level){
+        $level->delete();
+        return redirect(route('admin.show_levels'))->with('success','Product deleted Succesfully');
+    }
+
 }
