@@ -1,0 +1,244 @@
+/*styles for form1*/
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:auto;
+}
+body{
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+    color: #160b0b;
+    margin:100;
+    margin-bottom:400;
+    background: #654ea3;
+    background: linear-gradient(to right, #e96443, #904e95);
+    min-height: 100vh;
+    overflow-x:hidden;
+}
+
+
+
+.dropdown{
+    margin: auto;
+    height: 55px;
+}
+
+.dropdown-btn {
+    background: #1d1f24;
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+
+textarea
+{
+    resize: none
+}
+input, textarea, select, button{
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+    color: #666;
+}
+
+.wrapper{
+    max-width: 600px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.wrapper .image-holder{
+    width: 51%
+}
+.wrapper form{
+    width: 100%
+}
+
+#wizard{
+    min-height: 570px;
+    background: #fff;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 107px 75px 65px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media print{
+    body * {
+        display: none;
+    }
+    #wizard, #wizard * {
+        display:block;
+    }
+}
+
+h3{
+    font-family: "Poppins-SemiBold";
+}
+
+.form-row{
+    margin-bottom: 24px;
+
+}
+
+.form-control{
+    height: 42px;border: 1px solid #e6e6e6;
+    background: none;
+    width: 100%;
+    padding: 0 18px;
+}
+
+.checks{
+    display: flex;
+    margin: 6px;
+}
+
+.area{
+    border-collapse: collapse;
+    padding:15px
+}
+
+.align-right{
+    text-align: right;
+    border: 0;
+}
+
+.btn1{
+    text-align: center;
+    border:0;
+    padding:20px;
+    border-radius: 20px 20px;
+    
+}
+
+
+
+
+
+/*styles for payment_home*/
+
+.btn-success {
+    background-color: lavenderblush; /* Background color for success button */
+    color: #0c0b0b; /* Text color for success button */
+    border: 1px solid #070c08; /* Border color for success button */
+    padding: 10px 100px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+.btn-success:hover {
+    background-color: #ac3089; /* Darker background color on hover */
+    border: 1px solid #11000d; /* Darker border color on hover */
+}
+
+.pay{
+    text-align: center;
+}
+
+
+/*body{
+    text-align: center; 
+    background-color:lavenderblush;
+}
+*/
+
+.line {
+  text-align: center;
+  
+}
+
+
+.dropbtn {
+  background-color: darkviolet;
+  color: white;
+  padding: 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 10px;
+}
+
+.dropdown {
+    margin-right: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin-right: 100px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 4px 5px;
+  text-decoration: none;
+  display: block;
+}
+/*
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}
+*/
+.table-data {
+  margin-right: 100px;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+/* Styles for money_transfer->form  */
+
+
+form {
+    max-width: 800px;
+    margin:  auto;
+    padding: 20px;
+    color:#1a020e;
+    background-color: lavenderblush;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+  }
+  
+.label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  /*Styles for money_transfer->download form  */
+
+h1{
+    text-align: center;
+    color:#1a020e;
+}
+
+h2{
+    text-align: center;
+}
+
+/*Styles for money_transfer->payment_pay  */
+
+.st {
+    
+    margin-bottom: 5px;
+}
