@@ -13,6 +13,14 @@ use App\Http\Controllers\SubcourseController;
 use App\Http\Controllers\RepeatController;
 use App\Http\Controllers\PaymentController;
 
+use App\Http\Controllers\feedbackcontroller;
+
+use App\Http\Controllers\SubcourseController;
+use App\Http\Controllers\CombinationController;
+use App\Http\Controllers\SyllabusController;
+use App\Http\Controllers\SemesterController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -71,6 +79,7 @@ Route::view('/courses','student.courses');
 Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
 
+Route::view('/studentfeedback','studentfeedback');
 
 
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
@@ -89,10 +98,18 @@ Route::get('/admin/level_list',[LevelController::class,'level_list'])->name('adm
 Route::get('/admin/add_levels',[LevelController::class,'add-levels'])->name('admin.add_levels');
 Route::post('/admin/show_levels',[LevelController::class,'level_store'])->name('level.store');
 
+Route::get('/admin/add_combination',[CombinationController::class,'add_combination'])->name('admin.add_combination');
+Route::post('admin/show_combination',[CombinationController::class,'combination_store'])->name('combination.store');
+
+Route::get('/admin/add_semester',[SemesterController::class,'add_semester'])->name('admin.add_semester');
+Route::post('admin/show_semester',[SemesterController::class,'semester_store'])->name('semester.store');
+
+
 
 
 Route::get('/notification',[NotificationController::class, 'index'])->name('notification.index');
 Route::get('/notification',[NotificationController::class, 'create'])->name('notification');
+
 Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');  
              
 
@@ -113,3 +130,10 @@ Route::view('/student/money_transfer/payment_pay','student.money_transfer.paymen
 Route::post('pay',[PaymentController::class,'pay'])->name('payment');
 Route::get('success',[PaymentController::class,'success']);
 Route::get('error',[PaymentController::class,'error']);
+
+
+  
+
+Route::post('/studentfeedback',[feedbackcontroller::class,'studentfeedback']);
+                                                                                                       
+

@@ -129,6 +129,7 @@
                 <li class="nav-item">
                   <a href="pages/ui-components/tooltips.html" class="nav-link">Tooltips</a>
                 </li>
+                
               </ul>
             </div>
           </li>
@@ -174,6 +175,20 @@
                 </li>
                 <li class="nav-item">
                   <a href="pages/forms/wizard.html" class="nav-link">Add Attendance</a>
+
+                </li>
+                <li class="nav-item">
+                  <a href="{{route('admin.add_combination')}}" class="nav-link">Add Combination</a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{route('admin.add_syllabus')}}" class="nav-link">Add Syllabus</a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{route('admin.level_list')}}" class="nav-link">Add Level</a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{route('admin.add_semester')}}" class="nav-link">Add Semester</a>
+
                 </li>
               </ul>
             </div>

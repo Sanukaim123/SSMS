@@ -36,8 +36,7 @@
             margin-bottom: 10px;
         }
     </style>
-</head>
-<body>
+
     <h2>Course Units and Relevant Subjects</h2>
 ABC
 </body>
