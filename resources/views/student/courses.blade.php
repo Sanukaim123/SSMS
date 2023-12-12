@@ -74,8 +74,8 @@ h1,h2{
 				
 			</ul>
 		</div>
-</nav>
-
+	</nav>
+</head>
 <body>
 
 <div class="page-content">  

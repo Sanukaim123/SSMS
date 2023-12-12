@@ -10,10 +10,10 @@
     <form action="{{ url('admin/syllabus_process') }}" method="post">
             @csrf
             
-            <label for="Combination_name">Select Combination:</label>
-            <select name="Combination_name" id="Combination_name">
-                @foreach($combinations as $id => $combinationName)
-                    <option value="{{ $combinationName }}">{{ $combinationName }}</option>
+            <label for="S_Code">Select Subject:</label>
+            <select name="S_Code" id="S_Code">
+                @foreach($subjects as $id => $sCode)
+                    <option value="{{ $sCode }}">{{ $sCode }}</option>
                 @endforeach
             </select>
 
