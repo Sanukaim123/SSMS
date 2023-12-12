@@ -99,6 +99,7 @@ Route::get('/admin/add_levels',[LevelController::class,'add-levels'])->name('adm
 Route::post('/admin/show_levels',[LevelController::class,'level_store'])->name('level.store');
 
 Route::get('/admin/add_combination',[CombinationController::class,'add_combination'])->name('admin.add_combination');
+Route::get('/student/courses',[CombinationController::class,'show'])->name('student.courses');
 Route::post('admin/show_combination',[CombinationController::class,'combination_store'])->name('combination.store');
 
 Route::get('/admin/add_semester',[SemesterController::class,'add_semester'])->name('admin.add_semester');
