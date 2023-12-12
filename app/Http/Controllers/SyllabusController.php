@@ -22,7 +22,7 @@ class SyllabusController extends Controller
         return view('admin.add_syllabus', compact('subjects','levels','semesters', 'courses'));
     }
 
-    public function process(Request $request)
+    public function syllabus_process(Request $request)
     {
         $request->validate([
             'S_Code' => 'required',

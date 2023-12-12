@@ -141,6 +141,11 @@ Route::get('error',[PaymentController::class,'error']);
   
 
 Route::post('/studentfeedback',[feedbackcontroller::class,'studentfeedback']);
-                                                                                                       
 Route::get('/subject1details',[feedbackcontroller::class,'show']);
+
+Route::get('/admin/subcourse/form',[SubcourseController::class,'createForm'])->name('admin.subcourse.form');
+Route::get('/admin/subcourse/process',[SubcourseController::class,'showSubjects'])->name('admin.subcourse.show');
+Route::post('/admin/subcourse/process',[SubcourseController::class,'processForm'])->name('admin.subcourse.show');
                                                                                                        
+Route::get('/admin/dashboard/add_syllabus',[SyllabusController::class,'add'])->name('admin.add_syllabus');
+Route::post('/admin/syllabus_process',[SyllabusController::class,'syllabus_process'])->name('admin.show_syllabus');
