@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('notifications', function (Blueprint $table) {
             $table->id();
-            $table->text('add_tutorial');
-            $table->longText('add_comment');
+            $table->text('file');
+            $table->longText('add_description');
             $table->enum('subject',['Mathematics','Applied Mathematics','Computer Science','Chemistry','Physics']);
             $table->enum('level', ['Level1', 'Level2', 'Level3']);
             $table->enum('course',['Course1', 'Course2', 'Course3']);
