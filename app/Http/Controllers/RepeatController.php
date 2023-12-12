@@ -40,7 +40,10 @@ class RepeatController extends Controller
       
       return redirect('student/money_transfer/payment_pay'); 
     }
-
+    function show(){
+      $repeats = Repeat::all();
+      return view ('admin.show_payment',['repeats'=>$repeats]);
+  }
 
 
         

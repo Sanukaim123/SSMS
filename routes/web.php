@@ -149,3 +149,5 @@ Route::post('/admin/subcourse/process',[SubcourseController::class,'processForm'
                                                                                                        
 Route::get('/admin/dashboard/add_syllabus',[SyllabusController::class,'add'])->name('admin.add_syllabus');
 Route::post('/admin/syllabus_process',[SyllabusController::class,'syllabus_process'])->name('admin.show_syllabus');
+
+Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.show_payment');
