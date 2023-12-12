@@ -9,10 +9,14 @@ use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Course_unitController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\LevelController;
+
+use App\Http\Controllers\feedbackcontroller;
+
 use App\Http\Controllers\SubcourseController;
 use App\Http\Controllers\CombinationController;
 use App\Http\Controllers\SyllabusController;
 use App\Http\Controllers\SemesterController;
+
 
 
 /*
@@ -71,6 +75,9 @@ Route::view('/cdn','cdn');
 Route::view('/courses','student.courses');
 Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
+
+Route::view('/studentfeedback','studentfeedback');
+
 Route::view('/student/courses','student.courses');
 
 Route::view('/student/subject/applied','student.subject.applied');
@@ -78,6 +85,7 @@ Route::view('/student/subject/cs','student.subject.cs');
 Route::view('/student/subject/math','student.subject.math');
 Route::view('/student/subject/chem','student.subject.chem');
 Route::view('/student/subject/physics','student.subject.physics');
+
 
 
 
@@ -110,6 +118,12 @@ Route::post('admin/show_semester',[SemesterController::class,'semester_store'])-
 
 Route::get('/notification',[NotificationController::class, 'index'])->name('notification.index');
 Route::get('/notification',[NotificationController::class, 'create'])->name('notification');
+
+  
+
+Route::post('/studentfeedback',[feedbackcontroller::class,'studentfeedback']);
+                                                                                                       
+
 Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');
 
 Route::get('admin/subcourse/form', [SubcourseController::class, 'createForm'])->name('admin.subcourse.form');
@@ -122,4 +136,5 @@ Route::get('/student/courses',[CombinationController::class,'show'])->name('stud
 
 Route::get('admin/add_syllabus', [SyllabusController::class, 'add'])->name('admin.add_syllabus');
 Route::post('admin/syllabus_process', [SyllabusController::class, 'process']);
+
 
