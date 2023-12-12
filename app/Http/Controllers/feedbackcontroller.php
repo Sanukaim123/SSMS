@@ -27,4 +27,8 @@ class feedbackcontroller extends Controller
         $subject->save();
         return redirect('studentfeedback');
     }
+    function show(){
+        $data = studentfeedbacks::all()->where('subjectselection',3);
+        return view ('feedbackform.subject1details',['records'=>$data]);
+    }
 }

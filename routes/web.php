@@ -67,6 +67,7 @@ Route::view('/courses','student.courses');
 Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
 Route::view('/studentfeedback','studentfeedback');
+Route::view('/subject1details','feedbackform.subject1details');
 
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
 Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->name('admin.show_subjects');
@@ -91,4 +92,6 @@ Route::get('/notification',[NotificationController::class, 'create'])->name('not
 Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');  
 
 Route::post('/studentfeedback',[feedbackcontroller::class,'studentfeedback']);
+Route::get('/subject1details',[feedbackcontroller::class,'show']);
+
                                                                                                        
