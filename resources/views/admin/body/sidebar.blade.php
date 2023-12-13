@@ -181,6 +181,10 @@
                   <a href="{{route('admin.add_combination')}}" class="nav-link">Add Combination</a>
                 </li>
                 <li class="nav-item">
+                  <a href="{{route('admin.assignsubCombination')}}" class="nav-link">Assign Subjects to Combination</a>
+
+                </li>
+                <li class="nav-item">
                   <a href="{{route('admin.add_syllabus')}}" class="nav-link">Add Syllabus</a>
                 </li>
                 <li class="nav-item">
