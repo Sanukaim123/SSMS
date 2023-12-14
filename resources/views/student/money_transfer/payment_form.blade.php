@@ -74,6 +74,9 @@
                     <textarea name="description" rows="10" class="form-control" placeholder="Note about Course Units" style="height: 108px">
                     </textarea> 
                 </div>
+
+                <input type="file" name="file">
+                
             </section>
             
             
@@ -89,7 +92,7 @@
             </form>
             <section>
             <div class="btn1"> 
-                    <button  id="print">Print</button>
+                    <!--<button  id="print">Print</button>-->
                 </div> 
             </section>
            

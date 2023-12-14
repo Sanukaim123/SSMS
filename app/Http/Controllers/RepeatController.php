@@ -25,6 +25,9 @@ class RepeatController extends Controller
         'amount'=>'required|numeric',
         'degree'=>'required',
         'description'=>'required',
+        'file' => 'required|file|mimes:pdf,doc,docx|max:10240', // Adjust the validation rules as needed
+    
+        
       ]);
 
       $repeat =new Repeat();
@@ -34,12 +37,18 @@ class RepeatController extends Controller
       $repeat->amount = $request->input('amount');
       $repeat->degree= $request->input('degree');
       $repeat->description =$request->input('description');
+      $repeat->file = $request->file('file');
+      //$filePath = $repeat->store('uploads');
       $repeat->save();
 
       
       
       return redirect('student/money_transfer/payment_pay'); 
     }
+
+    
+
+
     function show(){
       $repeats = Repeat::all();
       return view ('admin.show_payment',['repeats'=>$repeats]);

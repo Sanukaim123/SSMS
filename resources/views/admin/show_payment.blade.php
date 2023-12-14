@@ -18,6 +18,7 @@
     <th>Amount</th>
     <th>Degree</th>
     <th>Description</th>
+    <th>File</th>
   </tr>
   @foreach($repeats as $repeat)
             <div class="payment-card">
@@ -28,6 +29,7 @@
     <td>{{ $repeat->amount }}</td>
     <td>{{ $repeat->degree }}</td>
     <td>{{ $repeat->description }}</td>
+    <td>{{ $repeat->file }}</td>
   </tr>
   @endforeach
             </div>
