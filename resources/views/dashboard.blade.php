@@ -115,6 +115,16 @@
                     <div class="col-md-3">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <div>
+                                <h4 class="fs-2"> </h4>
+                                <p>  <a href="{{route('register')}}" class="btn btn-primary"> Registration </a> 
+                            </div>
+                            <i class=" fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
                                 <h4 class="fs-2">  </h4> <br> 
                                 <p> <button type="button" class="btn btn-success">My Courses</button> </p>
                             </div>

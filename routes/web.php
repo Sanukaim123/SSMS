@@ -20,6 +20,9 @@ use App\Http\Controllers\CombinationController;
 use App\Http\Controllers\SyllabusController;
 use App\Http\Controllers\SemesterController;
 use App\Http\Controllers\SubcombController;
+use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\SelectCombinationController;  
+
 
 
 
@@ -157,3 +160,5 @@ Route::post('/admin/processForm',[SubcombController::class,'processForm'])->name
 
 Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.show_payment');
 
+Route::get('/student/Registration',[RegistrationController::class,'index'])->name('register');  
+Route::get('/student/selectCombination',[SelectCombinationController::class,'index'])->name('select'); 
