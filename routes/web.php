@@ -125,6 +125,7 @@ Route::post('/notification',[NotificationController::class, 'store'])->name('not
 Route::get('/student/money_transfer/payment_form',[RepeatController::class,'index'])->name('student.money_transfer.payment_form');
 Route::post('/repeats/store',[RepeatController::class,'store'])->name('repeats.store');
 Route::get('/student/money_transfer/download_form',[RepeatController::class,'downloadForm'])->name('student.money_transfer.download_form');
+Route::post('/student/money_transfer/payment_home',[RepeatController::class,'home'])->name('student.money_transfer.payment_home');
 
 
 Route::view('/student/money_transfer/payment_home','student.money_transfer.payment_home');
@@ -153,3 +154,6 @@ Route::post('/admin/syllabus_process',[SyllabusController::class,'syllabus_proce
 
 Route::get('/admin/assignsubCombination',[SubcombController::class,'createForm'])->name('admin.assignsubCombination');
 Route::post('/admin/processForm',[SubcombController::class,'processForm'])->name('admin.assignsubCombination.show');
+
+Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.show_payment');
+

@@ -10,6 +10,11 @@ class RepeatController extends Controller
         
         return view('student.money_transfer.payment_form');
     } 
+    public function home(){
+        
+      return view('student.money_transfer.payment_home');
+  } 
+
 
     //store data into the database
     public function store(Request $request){
@@ -35,7 +40,10 @@ class RepeatController extends Controller
       
       return redirect('student/money_transfer/payment_pay'); 
     }
-
+    function show(){
+      $repeats = Repeat::all();
+      return view ('admin.show_payment',['repeats'=>$repeats]);
+  }
 
 
         
