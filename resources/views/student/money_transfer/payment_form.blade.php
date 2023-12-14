@@ -23,7 +23,7 @@
         
                 <div class="form-row">
                 <label for="full_name" >Full Name:</label>
-                     <input type="text" name="full_name" class="form-control" placeholder="Johne Alexsender" required>
+                     <input type="text" name="full_name" class="form-control" placeholder="Rasika Chathurangi Ariyathilaka" required>
                 </div>
                 <div class="form-row">
                 <label for="full_name" >Student Number:</label>
