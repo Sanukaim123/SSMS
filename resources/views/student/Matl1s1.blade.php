@@ -12,15 +12,15 @@
     <thead>
         <tr>
             <th>Course Code</th>
-            <th>Course Name</th>
+           
             <!-- Add more columns as needed -->
         </tr>
     </thead>
     <tbody>
-        @foreach ($courseUnits as $courseUnit)
+        @foreach ($courseCodes as $courseUnit)
             <tr>
-                <td>{{ $courseUnit->Course_Code }}</td>
-                <td>{{ $courseUnit->Course_Name }}</td>
+                <td>{{ $courseUnit }}</td>
+             
                 <!-- Add more columns as needed -->
             </tr>
         @endforeach

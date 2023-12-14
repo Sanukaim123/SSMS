@@ -58,7 +58,7 @@ class SyllabusController extends Controller
     // Retrieve the course units from the courses table based on the course codes
     //$courseUnits = Course::whereIn('Course_Code', $courseCodes)->get();
 
-    return view('student.Matl1s1', compact('syllabus1s'));
+    return view('student.Matl1s1', compact('courseCodes'));
 }
 
 
