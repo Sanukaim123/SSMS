@@ -1,7 +1,8 @@
 
 <x-app-layout>
+    
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight" >
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
@@ -55,7 +56,7 @@
                         class="fas fa-chart-line me-2"></i>Results and GPA </a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-calendar me-2"></i> Attendance</a> 
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="{{route('student.money_transfer.payment_home')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-credit-card me-2"></i>Payments</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-bell me-2"></i> Notifications</a> 
@@ -149,7 +150,7 @@
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <div>
                                 <h4 class="fs-2"> </h4>
-                                <p>  <button type="button" class="btn btn-success"></button> </p>
+                                <a href="{{route('student.money_transfer.payment_home')}}" class="btn btn-primary"> Payment </a>
                             </div>
                             <i class=" fs-1 primary-text border rounded-full secondary-bg p-3"></i>
                         </div>
@@ -209,7 +210,7 @@
         };
     </script>
 
-<div id="footer" style="background-color: #333; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;">
+<div id="footer" style="background-color: #333; padding: 10px; text-align: center;  bottom: 0; width: 100%;">
 
 
 <p>&copy; 2024 Self study Management system</p>
