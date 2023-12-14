@@ -192,7 +192,11 @@
                         </td>
                         
                     </tr>
+
+                    <br> <br> 
 </table> 
+
+                    <br> <br> 
                      <center> <button class="button button1" type="submit">Submit</button>
                       <button class="button button2" type="reset">reset</button>
 </form>                                 
