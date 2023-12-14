@@ -19,6 +19,7 @@ use App\Http\Controllers\SubcourseController;
 use App\Http\Controllers\CombinationController;
 use App\Http\Controllers\SyllabusController;
 use App\Http\Controllers\SemesterController;
+use App\Http\Controllers\SubcombController;
 
 
 
@@ -86,6 +87,7 @@ Route::view('/student/subject/physics','student.subject.physics');
 Route::view('/studentfeedback','studentfeedback');
 
 
+
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
 Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->name('admin.show_subjects');
 Route::post('/admin/show_subjects',[SubjectController::class,'sub_store'])->name('subject.store');
@@ -150,4 +152,8 @@ Route::post('/admin/subcourse/process',[SubcourseController::class,'processForm'
 Route::get('/admin/dashboard/add_syllabus',[SyllabusController::class,'add'])->name('admin.add_syllabus');
 Route::post('/admin/syllabus_process',[SyllabusController::class,'syllabus_process'])->name('admin.show_syllabus');
 
+Route::get('/admin/assignsubCombination',[SubcombController::class,'createForm'])->name('admin.assignsubCombination');
+Route::post('/admin/processForm',[SubcombController::class,'processForm'])->name('admin.assignsubCombination.show');
+
 Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.show_payment');
+
