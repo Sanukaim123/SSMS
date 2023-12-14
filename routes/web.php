@@ -160,8 +160,8 @@ Route::post('/admin/processForm',[SubcombController::class,'processForm'])->name
 
 Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.show_payment');
 
-Route::get('/student/Registration',[RegistrationController::class,'index'])->name('register');  
-Route::get('/student/selectCombination',[SelectCombinationController::class,'index'])->name('select'); 
+//Route::get('/student/Registration',[RegistrationController::class,'index'])->name('register');  
+//Route::get('/student/selectCombination',[SelectCombinationController::class,'index'])->name('select'); 
 
 Route::get('/show-course-units/{sCode}/{level}/{semester}', [SyllabusController::class, 'showCourseUnits'])
     ->name('student.Matl1s1');
