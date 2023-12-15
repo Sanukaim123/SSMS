@@ -13,6 +13,7 @@ use App\Http\Controllers\SubcourseController;
 use App\Http\Controllers\CombinationController;
 use App\Http\Controllers\SyllabusController;
 use App\Http\Controllers\SemesterController;
+use App\Http\Controllers\St_markController;
 
 
 /*
@@ -131,3 +132,4 @@ Route::post('admin/syllabus_process', [SyllabusController::class, 'process']);
 use App\Http\Controllers\St_resultController;
 
 Route::post('/student/upload', [St_resultController::class, 'store'])->name('student.upload');
+Route::get('join_table', [St_markController::class, 'index'])->name('join_table');
