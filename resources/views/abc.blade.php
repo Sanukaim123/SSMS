@@ -14,7 +14,7 @@
 
    
 
-    <label>Select Courses: </label>
+    <label>Select Courses:aaa </label>
 
       @foreach($courses as $id => $courseCode)
       <input type="checkbox" name="Course_Codes[]" value="{{ $courseCode }}">{{ $courseCode }}
