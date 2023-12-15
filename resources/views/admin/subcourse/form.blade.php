@@ -1,3 +1,4 @@
+
 @extends('admin.admindashboard')
 @section('admin')
 <div class="page-content">
@@ -13,12 +14,16 @@
                 @endforeach
             </select>
 
+
+
             <br><br><br>
 
             <label>Select Courses: </label>
+
             @foreach($courses as $id => $courseCode)
                 <input type="checkbox" name="Course_Codes[]" value="{{ $courseCode }}">{{ $courseCode }}
             @endforeach
+
 
             <br><br><br>
 
@@ -27,3 +32,4 @@
 </div>
    
    @endsection
+

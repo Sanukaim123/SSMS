@@ -9,11 +9,25 @@ use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Course_unitController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\LevelController;
+
+use App\Http\Controllers\RepeatController;
+use App\Http\Controllers\PaymentController;
+
+use App\Http\Controllers\feedbackcontroller;
+
 use App\Http\Controllers\SubcourseController;
 use App\Http\Controllers\CombinationController;
 use App\Http\Controllers\SyllabusController;
 use App\Http\Controllers\SemesterController;
+<<<<<<< HEAD
 use App\Http\Controllers\St_markController;
+=======
+use App\Http\Controllers\SubcombController;
+use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\SelectCombinationController;  
+
+
+>>>>>>> main
 
 
 /*
@@ -72,16 +86,18 @@ Route::view('/cdn','cdn');
 Route::view('/courses','student.courses');
 Route::view('/add_courses','admin.add_courses');
 Route::view('/notification','demostrator.notification');
-Route::view('/student/courses','student.courses');
-
-Route::view('/student/subject/applied','student.subject.applied');
-Route::view('/student/subject/cs','student.subject.cs');
 Route::view('/student/subject/math','student.subject.math');
+Route::view('/student/subject/applied','student.subject.applied');
 Route::view('/student/subject/chem','student.subject.chem');
+Route::view('/student/subject/cs','student.subject.cs');
 Route::view('/student/subject/physics','student.subject.physics');
+<<<<<<< HEAD
 Route::view('/student/hello','student.hello');
 
 
+=======
+Route::view('/studentfeedback','studentfeedback');
+>>>>>>> main
 
 
 
@@ -102,6 +118,7 @@ Route::get('/admin/add_levels',[LevelController::class,'add-levels'])->name('adm
 Route::post('/admin/show_levels',[LevelController::class,'level_store'])->name('level.store');
 
 Route::get('/admin/add_combination',[CombinationController::class,'add_combination'])->name('admin.add_combination');
+Route::get('/student/courses',[CombinationController::class,'show'])->name('student.courses');
 Route::post('admin/show_combination',[CombinationController::class,'combination_store'])->name('combination.store');
 
 Route::get('/admin/add_semester',[SemesterController::class,'add_semester'])->name('admin.add_semester');
@@ -112,19 +129,46 @@ Route::post('admin/show_semester',[SemesterController::class,'semester_store'])-
 
 Route::get('/notification',[NotificationController::class, 'index'])->name('notification.index');
 Route::get('/notification',[NotificationController::class, 'create'])->name('notification');
-Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');
 
-Route::get('admin/subcourse/form', [SubcourseController::class, 'createForm'])->name('admin.subcourse.form');
-Route::post('admin/subcourse/process', [SubcourseController::class, 'processForm']);
-Route::get('admin/subcourse/show', [SubcourseController::class, 'showSubjects'])->name('admin.subcourse.show');
+Route::post('/notification',[NotificationController::class, 'store'])->name('notification.store');  
+             
+
+//money transfer
+
+Route::get('/student/money_transfer/payment_form',[RepeatController::class,'index'])->name('student.money_transfer.payment_form');
+Route::post('/repeats/store',[RepeatController::class,'store'])->name('repeats.store');
+Route::get('/student/money_transfer/download_form',[RepeatController::class,'downloadForm'])->name('student.money_transfer.download_form');
+Route::post('/student/money_transfer/payment_home',[RepeatController::class,'home'])->name('student.money_transfer.payment_home');
+
+
+Route::view('/student/money_transfer/payment_home','student.money_transfer.payment_home');
+//Route::view('/student/money_transfer/payment_form','student.money_transfer.payment_form');
+Route::view('/student/money_transfer/payment_pay','student.money_transfer.payment_pay');
+//Route::view('/student/money_transfer/download_form','student.money_transfer.download_form');
+
+
+
+Route::post('pay',[PaymentController::class,'pay'])->name('payment');
+Route::get('success',[PaymentController::class,'success']);
+Route::get('error',[PaymentController::class,'error']);
+
+
+  
+
+Route::post('/studentfeedback',[feedbackcontroller::class,'studentfeedback']);
+Route::get('/subject1details',[feedbackcontroller::class,'show']);
+
+Route::get('/admin/subcourse/form',[SubcourseController::class,'createForm'])->name('admin.subcourse.form');
+Route::get('/admin/subcourse/process',[SubcourseController::class,'showSubjects'])->name('admin.subcourse.show');
+Route::post('/admin/subcourse/process',[SubcourseController::class,'processForm'])->name('admin.subcourse.show');
                                                                                                        
-Route::get('/admin/show_levels',[LevelController::class,'show_levels'])->name('admin.show_levels');
-Route::delete('/admin/show_levels/{level}/destroy',[LevelController::class,'destroy'])->name('level.destroy'); 
-Route::get('/student/courses',[CombinationController::class,'show'])->name('student.courses');
+Route::get('/admin/dashboard/add_syllabus',[SyllabusController::class,'add'])->name('admin.add_syllabus');
+Route::post('/admin/syllabus_process',[SyllabusController::class,'syllabus_process'])->name('admin.show_syllabus');
 
-Route::get('admin/add_syllabus', [SyllabusController::class, 'add'])->name('admin.add_syllabus');
-Route::post('admin/syllabus_process', [SyllabusController::class, 'process']);
+Route::get('/admin/assignsubCombination',[SubcombController::class,'createForm'])->name('admin.assignsubCombination');
+Route::post('/admin/processForm',[SubcombController::class,'processForm'])->name('admin.assignsubCombination.show');
 
+<<<<<<< HEAD
 
 
 
@@ -133,3 +177,12 @@ use App\Http\Controllers\St_resultController;
 
 Route::post('/student/upload', [St_resultController::class, 'store'])->name('student.upload');
 Route::get('join_table', [St_markController::class, 'index'])->name('join_table');
+=======
+Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.show_payment');
+
+//Route::get('/student/Registration',[RegistrationController::class,'index'])->name('register');  
+//Route::get('/student/selectCombination',[SelectCombinationController::class,'index'])->name('select'); 
+
+Route::get('/show-course-units/{sCode}/{level}/{semester}', [SyllabusController::class, 'showCourseUnits'])
+    ->name('student.Matl1s1');
+>>>>>>> main

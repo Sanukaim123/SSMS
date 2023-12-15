@@ -22,7 +22,7 @@ class SyllabusController extends Controller
         return view('admin.add_syllabus', compact('subjects','levels','semesters', 'courses'));
     }
 
-    public function process(Request $request)
+    public function syllabus_process(Request $request)
     {
         $request->validate([
             'S_Code' => 'required',
@@ -47,6 +47,19 @@ class SyllabusController extends Controller
 
         return redirect()->route('admin.add_syllabus')->with('success', 'Subcourses added successfully');
     }
+    public function showCourseUnits($sCode, $level, $semester)
+{
+    // Retrieve the course codes from the syllabus table based on the given criteria
+    $courseCodes = Syllabus1::where('S_Code', $sCode)
+                           ->where('Level', $level)
+                           ->where('Semester_name', $semester)
+                           ->pluck('Course_Code');
+
+    // Retrieve the course units from the courses table based on the course codes
+    //$courseUnits = Course::whereIn('Course_Code', $courseCodes)->get();
+
+    return view('student.Matl1s1', compact('courseCodes'));
+}
 
 
 }
