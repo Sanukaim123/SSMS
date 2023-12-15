@@ -22,7 +22,7 @@ use App\Http\Controllers\SemesterController;
 use App\Http\Controllers\SubcombController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\SelectCombinationController;  
-
+use App\Http\Controllers\FeeController;
 
 
 
@@ -124,6 +124,10 @@ Route::post('/notification',[NotificationController::class, 'store'])->name('not
              
 
 //money transfer
+Route::get('/student/money_transfer/payment_home',[FeeController::class,'index'])->name('student.money_transfer.payment_home');
+Route::post('/fees/store',[FeeController::class,'storeFees'])->name('fees.store');
+
+
 
 Route::get('/student/money_transfer/payment_form',[RepeatController::class,'index'])->name('student.money_transfer.payment_form');
 Route::post('/repeats/store',[RepeatController::class,'store'])->name('repeats.store');

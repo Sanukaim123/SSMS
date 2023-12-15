@@ -18,11 +18,14 @@
                     <h1>University of Ruhuna Online Payments</h1><br>
                         <h2>Payment Types</h2><br>
                         <div class="pay">
-                                    <a class="btn btn-success" href="{{ url('/student/money_transfer/payment_form') }}">Repeat fees</a>
+                                  <!--  <a class="btn btn-success" href="{{ route('student.money_transfer.payment_form') }}">Repeat fees</a>
                                         <br><br><br>
                                     <a class="btn btn-success">Registartion fees</a>
                                     <br><br><br>
-                                    <a class="btn btn-success">Hostal fees</a>
+                                    <a class="btn btn-success">Hostal fees</a> -->  
+                                    @foreach($fees as $fee)
+                                        <a class="btn btn-success">{{ $fee->fee_type }} </a>
+                                    @endforeach
                                     
             
                         </div>
