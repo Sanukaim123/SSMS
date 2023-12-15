@@ -348,3 +348,15 @@ div.transbox p {
 #footer p {
   margin: 0;
 }
+
+.hel{
+  text-align:center;
+  padding: 120px;
+  font-size:1.5rem;
+
+}
+
+.hell{
+  text-align:center;
+  font-size:2.2rem;
+}
