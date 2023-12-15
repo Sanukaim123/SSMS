@@ -52,7 +52,7 @@
                         class="fa fa-star me-2"></i> Syllabus </a>
                 <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-book me-2"></i>My Courses </a>
-                <a href="{{route('register')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href='/abc' class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-bell me-2"></i> Registration</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-chart-line me-2"></i>Results and GPA </a>
@@ -78,7 +78,7 @@
                 
 
             </nav>
-
+            <p>User ID: {{ auth()->user()->id }}</p>
             
         </div>
     </div>

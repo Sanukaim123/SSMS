@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Select Course units</h1> 
+
+  <form action="">
+    <label for="S_Code">User Id:</label><br>
+    <input type="text" id="S_Code" name="S_Code"  value="{{ auth()->user()->name }}" readonly><br>
+
+   
+
+    <label>Select Courses: </label>
+
+      @foreach($courses as $id => $courseCode)
+      <input type="checkbox" name="Course_Codes[]" value="{{ $courseCode }}">{{ $courseCode }}
+      @endforeach
+
+    <br>
+    <br>
+
+    <button class="btn btn-primary" type="submit" value="Save a new course">Register</button>
+  </form>
+</body>
+</html>

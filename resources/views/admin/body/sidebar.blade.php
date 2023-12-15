@@ -194,6 +194,10 @@
                   <a href="{{route('admin.add_semester')}}" class="nav-link">Add Semester</a>
 
                 </li>
+                <li class="nav-item">
+                  <a href="{{route('admin.combination.form')}}" class="nav-link">Add Subject to Combination</a>
+
+                </li>
               </ul>
             </div>
           </li>
