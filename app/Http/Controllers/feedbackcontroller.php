@@ -8,6 +8,25 @@ use App\Models\studentfeedbacks;
 class feedbackcontroller extends Controller
 {
     function studentfeedback(Request $req){
+        $req->validate([
+            'subjectselection' => 'required',
+            'A' => 'required',
+            'B' => 'required',
+            'C' => 'required',
+            'D' => 'required',
+            'E' => 'required',
+            'F' => 'required',
+            'G' => 'required',
+            'H' => 'required',
+            'I' => 'required',
+            'J' => 'required',
+            'overall' => 'required',
+            'comments' => 'required'
+        ]);
+
+
+
+
         $subject = new studentfeedbacks;
         $subject->subjectselection = $req->subjectselection;
         $subject->A = $req->A;
