@@ -55,6 +55,9 @@
             color: #3d063e;
             font-size: 20px;
         }
+        .table-error{
+            color: red;
+        }
         
    
               
@@ -83,6 +86,11 @@
               <option name="subjectselection" value="12">Select Subject 12</option>
             </select>
 <h2>Please indicate your response by checking the appropriate box according to the following scale.</h2>  
+@if ($errors->any())
+    <div class="table-error">
+        <p>Please Fill All The Question</p>
+    </div>
+@endif
 <table border="6">
             <tr>
                 <th>  </th>
@@ -93,7 +101,7 @@
                 <th>Strongly Agree</th>
             </tr>
             <tr>
-                <td>A. The Teaching aids were used effectively during the lecture. </td>
+                <td class="@error('A') table-error @enderror">A. The Teaching aids were used effectively during the lecture. </td>
                 <td><center><input type="radio" id="A" name="A" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="A" name="A" value="Disagree"></td>
                 <td><center><input type="radio" id="A" name="A" value="Average"></td>
@@ -102,7 +110,7 @@
             
             </tr>
             <tr>
-                <td>B. The lecturer was punctual (start/stop lectures on time) </td>
+                <td  class="@error('B') table-error @enderror">B. The lecturer was punctual (start/stop lectures on time) </td>
                 <td><center><input type="radio" id="B" name="B" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="B" name="B" value="Disagree"></td>
                 <td><center><input type="radio" id="B" name="B" value="Average"></td>
@@ -110,7 +118,7 @@
                 <td><center><input type="radio" id="B" name="B" value="Strongly Agree"></td>
             </tr>
             <tr>
-                <td>C. The lecture was conducted at an acceptable speed. </td>
+                <td class="@error('C') table-error @enderror">C. The lecture was conducted at an acceptable speed. </td>
                 <td><center><input type="radio" id="C" name="C" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="C" name="C" value="Disagree"></td>
                 <td><center><input type="radio" id="C" name="C" value="Average"></td>
@@ -118,7 +126,7 @@
                 <td><center><input type="radio" id="C" name="C" value="Strongly Agree"></td>                
             </tr>
             <tr>
-                <td>D. The lectures were clear and easy to understand.  </td>
+                <td class="@error('D') table-error @enderror">D. The lectures were clear and easy to understand.  </td>
                 <td><center><input type="radio" id="D" name="D" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="D" name="D" value="Disagree"></td>
                 <td><center><input type="radio" id="D" name="D" value="Average"></td>
@@ -126,7 +134,7 @@
                 <td><center><input type="radio" id="D" name="D" value="Strongly Agree"></td> 
             </tr>        
             <tr>
-                <td>E. The methods of teaching adopted were good. (lectures, discussions, presentations, tutorials, case studies etc.)  </td>
+                <td class="@error('E') table-error @enderror">E. The methods of teaching adopted were good. (lectures, discussions, presentations, tutorials, case studies etc.)  </td>
                 <td><center><input type="radio" id="E" name="E" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="E" name="E" value="Disagree"></td>
                 <td><center><input type="radio" id="E" name="E" value="Average"></td>
@@ -134,7 +142,7 @@
                 <td><center><input type="radio" id="E" name="E" value="Strongly Agree"></td> 
             </tr>
             <tr>
-                <td>F. The lecturer encouraged to ask questions by students and discussed them.  </td>
+                <td class="@error('F') table-error @enderror">F. The lecturer encouraged to ask questions by students and discussed them.  </td>
                 <td><center><input type="radio" id="F" name="F" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="F" name="F" value="Disagree"></td>
                 <td><center><input type="radio" id="F" name="F" value="Average"></td>
@@ -142,7 +150,7 @@
                 <td><center><input type="radio" id="F" name="F" value="Strongly Agree"></td>
             </tr>
             <tr>
-                <td>G. The classes were conducted as indicated in the time table.  </td>
+                <td class="@error('G') table-error @enderror">G. The classes were conducted as indicated in the time table.  </td>
                 <td><center><input type="radio" id="G" name="G" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="G" name="G" value="Disagree"></td>
                 <td><center><input type="radio" id="G" name="G" value="Average"></td>
@@ -150,7 +158,7 @@
                 <td><center><input type="radio" id="G" name="G" value="Strongly Agree"></td>
             </tr>
             <tr>
-                <td>H. The lecturer was confident in teaching the subject.  </td>
+                <td class="@error('H') table-error @enderror">H. The lecturer was confident in teaching the subject.  </td>
                 <td><center><input type="radio" id="H" name="H" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="H" name="H" value="Disagree"></td>
                 <td><center><input type="radio" id="H" name="H" value="Average"></td>
@@ -158,7 +166,7 @@
                 <td><center><input type="radio" id="H" name="H" value="Strongly Agree"></td>
             </tr>
             <tr>
-                <td>I. The lectures helped to improve knowledge.  </td>
+                <td class="@error('I') table-error @enderror">I. The lectures helped to improve knowledge.  </td>
                 <td><center><input type="radio" id="I" name="I" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="I" name="I" value="Disagree"></td>
                 <td><center><input type="radio" id="I" name="I" value="Average"></td>
@@ -166,7 +174,7 @@
                 <td><center><input type="radio" id="I" name="I" value="Strongly Agree"></td>
             </tr>
             <tr>
-                <td>J. The course outline/syllabus given at the beginning was covered.  </td>
+                <td class="@error('J') table-error @enderror">J. The course outline/syllabus given at the beginning was covered.  </td>
                 <td><center><input type="radio" id="J" name="J" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="J" name="J" value="Disagree"></td>
                 <td><center><input type="radio" id="J" name="J" value="Average"></td>
@@ -174,7 +182,7 @@
                 <td><center><input type="radio" id="J" name="J" value="Strongly Agree"></td>
             </tr>
             <tr>
-                <td><b>The overall grading of the course </b></td>
+                <td class="@error('overall') table-error @enderror"><b>The overall grading of the course </b></td>
                 <td><center><input type="radio" id="overall" name="overall" value="Strongly Disagree"></td>
                 <td><center><input type="radio" id="overall" name="overall" value="Disagree"></td>
                 <td><center><input type="radio" id="overall" name="overall" value="Average"></td>
@@ -182,10 +190,10 @@
                 <td><center><input type="radio" id="overall" name="overall" value="Strongly Agree"></td>                               
             </tr>
                     <tr>
-                        <td>
+                        <td class="@error('comments') table-error @enderror">
                                         <p><b>Welcome for Other Comments</b></p>
                         </td>
-                        <td colspan="5">
+                        <td  colspan="5">
                                          <textarea id="comments" name="comments" rows="10" cols="100">
 
                                         </textarea>
