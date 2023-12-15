@@ -8,13 +8,14 @@
 <body>
   <h1>Select Course units</h1> 
 
-  <form action="">
+  <form method="post" action="{{url('abc/process')}}">
+    @csrf
     <label for="S_Code">User Id:</label><br>
     <input type="text" id="S_Code" name="S_Code"  value="{{ auth()->user()->name }}" readonly><br>
 
    
 
-    <label>Select Courses:aaa </label>
+    <label>Select Courses: </label>
 
       @foreach($courses as $id => $courseCode)
       <input type="checkbox" name="Course_Codes[]" value="{{ $courseCode }}">{{ $courseCode }}

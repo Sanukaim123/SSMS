@@ -21,14 +21,19 @@ class CourseregistrationController extends Controller
 
     public function processForm(Request $request)
     {
+
+        // dd($request);
         $request->validate([
             'name'=>'required',
             'Course_Codes' => 'required|array'
         ]);
 
        
-        $courseCodes = $request->input('Course_Codes');
-
+       $user=new User();
+       $user->name=$request->name;
+       $user->Course_Code=$request->Course_Code;
+       
+        dd($courseCodes);
         foreach ($courseCodes as $courseCode) {
             Course::create([
                
@@ -38,4 +43,5 @@ class CourseregistrationController extends Controller
 
         return redirect()->route('abc')->with('success', 'Subcourses added successfully');
     }
+
 }
