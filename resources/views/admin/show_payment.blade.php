@@ -1,3 +1,5 @@
+@extends('admin.admindashboard')
+@section('admin')
 <style>
    table, th, td {
      
@@ -7,9 +9,9 @@
      text-align: left;
    }
    
-    </style>
+    </style><br><br><br>
 <div class="container">
-        <h1> Examination Payments</h1>
+        <h1> Repeat exam Payments</h1>
         <table style="width:60%">
         <tr>
     <th>Name</th>
@@ -45,6 +47,7 @@
        
 
 </body>
+@endsection
 </html>
 
     
