@@ -118,6 +118,11 @@
                   <a href="{{route('admin.combination.form')}}" class="nav-link">Add Subject to Combination</a>
 
                 </li>
+
+                <li class="nav-item">
+                  <a href="{{route('admin.add_stresults')}}" class="nav-link">Add Subject to Combination</a>
+
+                </li>
               </ul>
             </div>
           </li>
