@@ -120,12 +120,12 @@ img {vertical-align: middle;}
                         class="fa fa-calendar me-2"></i> Attendance</a> 
                 <a href="{{route('student.money_transfer.payment_home')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-credit-card me-2"></i>Pay for Repeat Exams </a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-bell me-2"></i> Notifications</a> 
+                <a href="{{route('noti.display')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fa fa-bell me-2"></i> Notification</a> 
                 <a href="studentfeedback" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-bell me-2"></i> Feedback</a> 
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
-                        class="fas fa-power-off me-2"></i>Logout</a> 
+                <a href="{{route('chat.form')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fa fa-comment me-2"></i>Messages</a> 
             </div>
         </div>
         <!-- /#sidebar-wrapper -->

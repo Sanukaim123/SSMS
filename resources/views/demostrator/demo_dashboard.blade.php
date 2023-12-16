@@ -119,11 +119,10 @@ img {vertical-align: middle;}
                         class="fa fa-star me-2"></i> Syllabus </a>
                 
                 <a href="{{url('/notification')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-bell me-2"></i> Notifications</a> 
+                        class="fa fa-bell me-2"></i>Add Tutorial</a> 
                 <a href="studentfeedback" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-bell me-2"></i> Feedback</a> 
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-comment me-2"></i> Messages</a> 
+            
                
             </div> 
         </div>
