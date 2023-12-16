@@ -31,6 +31,8 @@ use App\Http\Controllers\DefineController;
 use App\Http\Controllers\chatcontroller;
 use App\Http\Controllers\DemonstratorController;
 use App\Http\Controllers\notController;
+use App\Http\Controllers\StresultController;
+
 
 
 
@@ -239,3 +241,10 @@ Route::get('/display-messages', [DemonstratorController::class, 'displayMessages
 
 Route::get('/display-noti', [notController::class, 'displayNoti'])
     ->name('noti.display');
+
+
+ Route::get('/admin/add_stresult',[StresultController::class,'add_stresult'])->name('admin.add_stresults');
+Route::post('/admin/add_stresult',[StresultController::class,'stresult_store'])->name('stresult.store');
+    
+
+
