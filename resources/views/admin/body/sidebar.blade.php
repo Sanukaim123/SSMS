@@ -40,9 +40,9 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="pages/apps/chat.html" class="nav-link">
+            <a href="{{route('messages.display')}}" class="nav-link">
               <i class="link-icon" data-feather="message-square"></i>
-              <span class="link-title">Chat</span>
+              <span class="link-title">Messages</span>
             </a>
           </li>
           <li class="nav-item">
