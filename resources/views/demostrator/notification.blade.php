@@ -14,10 +14,11 @@
    
        <div class="hero">
             
-<form method="post" action="{{route('notification.store')}}">
+<form method="post" action="{{route('notification.store')}}" class="border border-secondary">  
     @csrf
     @method('post')
-          
+    
+    <br> 
     <div class="input-group">
         <input type="file" id="file"  name="file" required>     
          <label for="file"><i class="bi bi-file-earmark-text-fill"></i> 

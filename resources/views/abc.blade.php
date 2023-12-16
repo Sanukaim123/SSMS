@@ -8,9 +8,10 @@
 <body>
   <h1>Select Course units</h1> 
 
-  <form action="">
-    <label for="S_Code">User Id:</label><br>
-    <input type="text" id="S_Code" name="S_Code"  value="{{ auth()->user()->name }}" readonly><br>
+  <form method="post" action="{{url('abc/process')}}">
+    @csrf
+    <label for="name">User Id:</label><br>
+    <input type="text" id="name" name="name"  value="{{ auth()->user()->name }}" readonly><br>
 
    
 
