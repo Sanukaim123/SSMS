@@ -14,6 +14,7 @@ use App\Http\Controllers\RepeatController;
 use App\Http\Controllers\PaymentController;
 
 use App\Http\Controllers\feedbackcontroller;
+use App\Http\Controllers\AddUserController;
 
 use App\Http\Controllers\SubcourseController;
 use App\Http\Controllers\CombinationController;
@@ -91,6 +92,7 @@ Route::view('/student/subject/cs','student.subject.cs');
 Route::view('/student/subject/physics','student.subject.physics');
 Route::view('/studentfeedback','studentfeedback');
 Route::view('/abc','abc');
+Route::view('/adduser','adduser');
 
 
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
@@ -148,6 +150,7 @@ Route::get('error',[PaymentController::class,'error']);
   
 
 Route::post('/studentfeedback',[feedbackcontroller::class,'studentfeedback']);
+Route::post('/adduser',[AddUserController::class,'store']);
 Route::get('/subject1details',[feedbackcontroller::class,'show']);
 
 Route::get('/admin/subcourse/form',[SubcourseController::class,'createForm'])->name('admin.subcourse.form');
