@@ -23,6 +23,8 @@ use App\Http\Controllers\St_markController;
 use App\Http\Controllers\SubcombController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\SelectCombinationController;  
+use App\Http\Controllers\Combination1Controller;  
+use App\Http\Controllers\CourseregistrationController;
 
 
 
@@ -92,7 +94,7 @@ Route::view('/student/hello','student.hello');
 
 
 Route::view('/studentfeedback','studentfeedback');
-
+Route::view('/abc','abc');
 
 
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
@@ -177,3 +179,9 @@ Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.
 
 Route::get('/show-course-units/{sCode}/{level}/{semester}', [SyllabusController::class, 'showCourseUnits'])
     ->name('student.Matl1s1');
+
+Route::get('/admin/combination/form',[Combination1Controller::class,'createForm'])->name('admin.combination.form');
+Route::post('/admin/combination/process',[Combination1Controller::class,'processForm'])->name('admin.combination.show');
+
+Route::get('/abc',[CourseregistrationController::class,'createForm'])->name('abc');
+Route::post('abc/process',[CourseregistrationController::class,'processForm'])->name('abc.process');

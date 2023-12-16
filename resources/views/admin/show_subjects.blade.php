@@ -48,5 +48,7 @@
               </div>
     </div>
      <!-- /.card -->
+     <br><br>
+     <a href="{{ route('admin.add_subjects') }}" class="btn btn-primary">Add New Subject </a>
 </div>
  @endsection
