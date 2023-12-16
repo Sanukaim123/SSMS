@@ -9,12 +9,9 @@ use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Course_unitController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\LevelController;
-
 use App\Http\Controllers\RepeatController;
 use App\Http\Controllers\PaymentController;
-
 use App\Http\Controllers\feedbackcontroller;
-
 use App\Http\Controllers\SubcourseController;
 use App\Http\Controllers\CombinationController;
 use App\Http\Controllers\SyllabusController;
@@ -25,8 +22,12 @@ use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\SelectCombinationController;  
 use App\Http\Controllers\Combination1Controller;  
 use App\Http\Controllers\CourseregistrationController;
-
-
+use App\Http\Controllers\IndeController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\Student1Controller;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\DashController;
+use App\Http\Controllers\DefineController;
 
 
 /*
@@ -185,3 +186,37 @@ Route::post('/admin/combination/process',[Combination1Controller::class,'process
 
 Route::get('/abc',[CourseregistrationController::class,'createForm'])->name('abc');
 Route::post('abc/process',[CourseregistrationController::class,'processForm'])->name('abc.process');
+
+//attendance
+
+Route::get('/menu',[MenuController::class,'inde'])->name('first.menubar');
+
+Route::get('/student1',[Student1Controller::class,'index'])->name('students.index');
+Route::get('/cre',[Student1Controller::class,'create'])->name('students.create');
+Route::post('/student1',[Student1Controller::class,'store'])->name('students.store');
+Route::get('/student1/{student}/edit',[Student1Controller::class,'edit'])->name('students.edit');
+Route::put('/student1/{student}/update',[Student1Controller::class,'update'])->name('students.update');
+Route::delete('/student1/{student}/destroy',[Student1Controller::class,'destroy'])->name('students.destroy');
+
+Route::get('/product',[ProductController::class,'index'])->name('products.index');
+
+Route::get('/create',[ProductController::class,'create'])->name('products.create');
+Route::post('/product',[ProductController::class,'store'])->name('products.store');
+Route::get('/product/{product}/edit',[ProductController::class,'edit'])->name('products.edit');
+Route::put('/product/{product}/update',[ProductController::class,'update'])->name('products.update');
+Route::delete('/product/{product}/destroy',[ProductController::class,'destroy'])->name('products.destroy');
+
+Route::get('/ind',[IndeController::class,'ind'])->name('first.ind');
+
+
+
+
+Route::post('/poo',[IndeController::class,'sav'])->name('first.sav');
+Route::get('/dash',[DashController::class,'dah'])->name('first.dashboard');
+
+Route::get('/last',[DefineController::class,'last'])->name('first.last');
+
+Route::get('/product/{product}/edi1',[IndeController::class,'viw'])->name('first.indd');
+
+Route::get('/product/{product}/student1/{student}/edi2',[DefineController::class,'edi'])->name('products.edi');
+Route::put('/upd',[IndeController::class,'upd'])->name('products.upd');
