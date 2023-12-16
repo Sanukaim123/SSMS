@@ -28,6 +28,10 @@ use App\Http\Controllers\Student1Controller;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\DashController;
 use App\Http\Controllers\DefineController;
+use App\Http\Controllers\chatcontroller;
+use App\Http\Controllers\DemonstratorController;
+use App\Http\Controllers\notController;
+
 
 
 /*
@@ -220,3 +224,18 @@ Route::get('/product/{product}/edi1',[IndeController::class,'viw'])->name('first
 
 Route::get('/product/{product}/student1/{student}/edi2',[DefineController::class,'edi'])->name('products.edi');
 Route::put('/upd',[IndeController::class,'upd'])->name('products.upd');
+
+
+
+
+// Routes related to ChatController
+Route::get('/chat', [chatcontroller::class, 'AddChat'])->name('chat.form');
+Route::post('/chat', [chatcontroller::class, 'uploadChatInput'])->name('chat.submit');
+
+// Route for displaying stored messages
+Route::get('/display-messages', [DemonstratorController::class, 'displayMessages'])
+    ->name('messages.display');
+
+
+Route::get('/display-noti', [notController::class, 'displayNoti'])
+    ->name('noti.display');
