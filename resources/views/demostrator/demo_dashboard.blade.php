@@ -46,7 +46,7 @@ img {vertical-align: middle;}
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 5s ease;
 }
 
 .active {
@@ -56,7 +56,7 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes fade {
@@ -125,32 +125,32 @@ img {vertical-align: middle;}
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-comment me-2"></i> Messages</a> 
                
-            </div>
+            </div> 
         </div>
         <!-- /#sidebar-wrapper -->
 
 
-        <div class="slideshow-container">
+<div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://cdn.pixabay.com/photo/2017/08/01/00/38/man-2562325_1280.jpg" style="width:25cm; height:15cm;">
+  <div class="numbertext"></div>
+  <img src="https://www.ruh.ac.lk/images/2020/02/18/history2.jpg" style="width:25cm; height:15cm;">
   <div class="text">Caption Text</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
+  <div class="numbertext"></div>
   <img src="https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg" style="width:25cm; height:15cm;">
   <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
+
   <img src="https://cdn.pixabay.com/photo/2016/11/08/05/10/students-1807505_640.jpg" style="width:25cm; height:15cm;">
   <div class="text">Caption Three</div>
 </div>
 
-</div>
+</div> 
 <br>
 
 <div style="text-align:center">
@@ -225,7 +225,7 @@ img {vertical-align: middle;}
         }
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
         }
         </script>
 

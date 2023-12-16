@@ -91,7 +91,7 @@
             <h2 style="text-align: center;">Paying in Voucher</h2>
         <div id="wizard11">
 
-            <!-- SECTION 1 -->
+            <!-- SECTION 1 --> 
           
             <section>
         
@@ -157,7 +157,7 @@
             <!-- SECTION 4 -->
             <section>
                 <div class="btn1"> 
-                    <button class="btn_sub" type="submit">Submit</button>
+                    <button class="btn_sub " type="submit">Submit</button>
                 </div>
             </section>
             </form>

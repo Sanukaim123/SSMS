@@ -79,31 +79,28 @@
 
             </nav>
 <div class="hel">
-            <b><h class="hell">All Results</h></b>
-    <table style="border:1px solid black;margin-left:auto;margin-right:auto;width: 100%;text-align: left;
-  padding: 16px;">
-    <thead>
-        <tr>
             
-            <th>Course Unit</th>
-            <th>Subject Name</th>
-            <th>result</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach($data as $row)
-        <tr>
-           
-            <td>{{$row->course_unit}}</td>
-            <td>{{$row->subject_name}}</td>
-            <td>{{$row->grade}}</td>
-        </tr>
-        @endforeach
-    </tbody>
-    </table>
-    </div>
-            
-        </div>
+
+<div style="text-align: center;">
+        <h1 style="color: #333;">All Results</h1>  <br> 
+        <table style="border: 1px solid #000; margin: 0 auto; width: 80%; border-collapse: collapse; margin-top: 20px;">
+            <thead style="background-color: #f2f2f2;">
+                <tr>
+                    <th style="border: 1px solid #000; padding: 10px;">Course Unit</th>
+                    <th style="border: 1px solid #000; padding: 10px;">Subject Name</th>
+                    <th style="border: 1px solid #000; padding: 10px;">Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($data as $row)
+                <tr>
+                    <td style="border: 1px solid #000; padding: 10px;">{{$row->course_unit}}</td>
+                    <td style="border: 1px solid #000; padding: 10px;">{{$row->subject_name}}</td>
+                    <td style="border: 1px solid #000; padding: 10px; text-align: center;">{{$row->grade}}</td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
     </div>
 
 
