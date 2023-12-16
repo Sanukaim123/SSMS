@@ -18,6 +18,10 @@
               <span class="link-title">Dashboard</span>
             </a>
           </li>
+          
+            
+          
+          
           <li class="nav-item nav-category">web apps</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
@@ -64,22 +68,14 @@
                 <li class="nav-item">
                   <a href="{{route('admin.show_payment')}}" class="nav-link">Repeat exam student data</a>
                 </li>
-                <li class="nav-item">
-                  <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Owl carousel</a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/advanced-ui/sortablejs.html" class="nav-link">SortableJs</a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/advanced-ui/sweet-alert.html" class="nav-link">Sweet Alert</a>
-                </li>
+                
               </ul>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
               <i class="link-icon" data-feather="inbox"></i>
-              <span class="link-title">Forms</span>
+              <span class="link-title"> Components </span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="forms">

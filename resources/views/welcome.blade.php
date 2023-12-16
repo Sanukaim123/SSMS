@@ -26,13 +26,13 @@
 				<li><a href="home">Home</a></li>
 				<li><a href="">About</a></li>
 				<li><a href="Contact">Contact</a></li>
-				<button><a href="{{route('register')}}">SignIn</a></button>&nbsp&nbsp
+				<button><a href="{{route('register')}}">Sign Up</a></button>&nbsp&nbsp
 				<button><a href="{{route('login')}}">Login</a></button>
 			</ul>
 		</div>
 	</nav>
 
-<section id="Home">
+<section id="Home"> 
 
 	<h2>Enhance your Higher Education with SSMS </h2>
 	<p>The University of Ruhuna has ten faculties: Agriculture, Engineering, Fisheries and Marine Sciences & Technology, Humanities and Social Sciences, Management and Finance, Medicine, Science, Graduate studies , Technology and Allied Health Sciences.</p>

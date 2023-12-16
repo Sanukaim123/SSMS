@@ -59,7 +59,9 @@
                                     <br>
                                     
 
-                                    <button class="submit">LET'S START</button>
+                                    <div style="text-align: center;">
+                                        <button class="submit" style="display: block; margin: 0 auto;">Login</button>
+                                    </div>
 
                                     <!-- Remember Me -->
                                     <div class="block mt-4">

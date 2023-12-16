@@ -96,16 +96,21 @@
                 <h1 style="text-align: center;">University of Ruhuna Online Payments</h1><br>
                     <h2  style="text-align: center;">Payment Types</h2><br>
                     <div class="pay">
-                                <a class="btn btn-success" href="{{ url('/student/money_transfer/payment_form') }}">Repeat fees</a>
-                                    <br><br>
-                                <a class="btn btn-success">Registartion fees</a>
-                                <br><br>
-                                <a class="btn btn-success">Hostal fees</a>
-                                <br><br>
-                                <a class="btn btn-success">Library fees</a>
-                                <br><br>
-                                <a class="btn btn-success">Medical fees</a>
-                                <br><br>
+                               
+                    <div style="text-align: center;">
+    <a class="btn btn-success" href="{{ url('/student/money_transfer/payment_form') }}" style="width: 7cm; margin-bottom: 10px; display: inline-block;">Repeat Fees</a>
+    <br><br>
+    <a class="btn btn-success" style="width: 7cm; margin-bottom: 10px; display: inline-block;">Registration Fees</a>
+    <br><br>
+    <a class="btn btn-success" style="width: 7cm; margin-bottom: 10px; display: inline-block;">Hostel Fees</a>
+    <br><br>
+    <a class="btn btn-success" style="width: 7cm; margin-bottom: 10px; display: inline-block;">Library Fees</a>
+    <br><br>
+    <a class="btn btn-success" style="width: 7cm; margin-bottom: 10px; display: inline-block;">Medical Fees</a>
+</div>
+
+<br> <br> 
+
         
                     </div>
     </div>
