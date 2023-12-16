@@ -19,6 +19,7 @@ use App\Http\Controllers\SubcourseController;
 use App\Http\Controllers\CombinationController;
 use App\Http\Controllers\SyllabusController;
 use App\Http\Controllers\SemesterController;
+use App\Http\Controllers\St_markController;
 use App\Http\Controllers\SubcombController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\SelectCombinationController;  
@@ -89,6 +90,9 @@ Route::view('/student/subject/applied','student.subject.applied');
 Route::view('/student/subject/chem','student.subject.chem');
 Route::view('/student/subject/cs','student.subject.cs');
 Route::view('/student/subject/physics','student.subject.physics');
+Route::view('/student/hello','student.hello');
+
+
 Route::view('/studentfeedback','studentfeedback');
 Route::view('/abc','abc');
 
@@ -160,6 +164,14 @@ Route::post('/admin/syllabus_process',[SyllabusController::class,'syllabus_proce
 Route::get('/admin/assignsubCombination',[SubcombController::class,'createForm'])->name('admin.assignsubCombination');
 Route::post('/admin/processForm',[SubcombController::class,'processForm'])->name('admin.assignsubCombination.show');
 
+
+
+
+
+use App\Http\Controllers\St_resultController;
+
+Route::post('/student/upload', [St_resultController::class, 'store'])->name('student.upload');
+Route::get('join_table', [St_markController::class, 'index'])->name('join_table');
 Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.show_payment');
 
 //Route::get('/student/Registration',[RegistrationController::class,'index'])->name('register');  

@@ -52,7 +52,7 @@
                         class="fa fa-star me-2"></i> Syllabus </a>
                 <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-book me-2"></i>My Courses </a>
-                <a href='/abc' class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="{{route('register')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-bell me-2"></i> Registration</a>
                 <a href="{{route('join_table')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-chart-line me-2"></i>Results and GPA </a>
@@ -78,7 +78,30 @@
                 
 
             </nav>
-            <p>User ID: {{ auth()->user()->id }}</p>
+<div class="hel">
+            <b><h class="hell">All Results</h></b>
+    <table style="border:1px solid black;margin-left:auto;margin-right:auto;width: 100%;text-align: left;
+  padding: 16px;">
+    <thead>
+        <tr>
+            
+            <th>Course Unit</th>
+            <th>Subject Name</th>
+            <th>result</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($data as $row)
+        <tr>
+           
+            <td>{{$row->course_unit}}</td>
+            <td>{{$row->subject_name}}</td>
+            <td>{{$row->grade}}</td>
+        </tr>
+        @endforeach
+    </tbody>
+    </table>
+    </div>
             
         </div>
     </div>
@@ -114,5 +137,9 @@
 </div>
     </body>
 </x-app-layout>
+
+
+
+
 
 
