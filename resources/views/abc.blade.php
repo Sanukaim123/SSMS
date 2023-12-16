@@ -10,8 +10,8 @@
 
   <form method="post" action="{{url('abc/process')}}">
     @csrf
-    <label for="S_Code">User Id:</label><br>
-    <input type="text" id="S_Code" name="S_Code"  value="{{ auth()->user()->name }}" readonly><br>
+    <label for="name">User Id:</label><br>
+    <input type="text" id="name" name="name"  value="{{ auth()->user()->name }}" readonly><br>
 
    
 
