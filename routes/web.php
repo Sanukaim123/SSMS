@@ -172,4 +172,4 @@ Route::get('/admin/combination/form',[Combination1Controller::class,'createForm'
 Route::post('/admin/combination/process',[Combination1Controller::class,'processForm'])->name('admin.combination.show');
 
 Route::get('/abc',[CourseregistrationController::class,'createForm'])->name('abc');
-Route::post('abc/process',[CourseregistrationController::class,'processForm'])->name('abc.show');
+Route::post('abc/process',[CourseregistrationController::class,'processForm'])->name('abc.process');
