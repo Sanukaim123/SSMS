@@ -41,6 +41,8 @@ use App\Http\Controllers\StprofileController;
 
 
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -253,6 +255,7 @@ Route::post('/admin/add_stresult',[StresultController::class,'stresult_store'])-
     
 
 
+
 //suraj
 use App\Http\Controllers\ResuController;
 
@@ -304,3 +307,10 @@ Route::put('stprofile/{stprofile}/update',[StprofileController::class,'update'])
 Route::view('/userdetails','userdetails');
 Route::get('/userdetails',[AddUserController::class,'show']);
 Route::delete('/userdetails/{record}/destroy',[AddUserController::class,'destroy'])->name('record.destroy');
+
+Route::get('stprofile',[StprofileController::class,'stindex'])->name('stprofiles.stindex');
+//Route::get('stprofile/create',[StprofileController::class,'stcreate'])->name('stprofiles.stcreate');
+Route::post('stprofile',[StprofileController::class,'store'])->name('stprofile.store');
+Route::get('stprofile/{stprofile}/edit',[StprofileController::class,'edit'])->name('stprofiles.stedit');
+Route::put('stprofile/{stprofile}/update',[StprofileController::class,'update'])->name('stprofile.update');
+
