@@ -25,7 +25,7 @@
 				<div class="card-md" style="width:48rem;">
 				<div class="card-body">
 				<h3 class="card-title mb-3">Level 1</h3>
-					<a href="{{ route('student.Matl1s1', ['sCode' => 'MAT', 'level' => 'Level1', 'semester' => 1]) }}" class="btn">Semester 1</a>
+					<a href="{{ route('syllabus.filter')}}" class="btn">Semester 1</a>
 					<a href="#" class="btn">Semester 2</a>
 				</div>
 				</div>

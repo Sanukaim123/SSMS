@@ -12,6 +12,7 @@
     <thead>
         <tr>
             <th>Course Code</th>
+            <th>Course Name</th>
            
             <!-- Add more columns as needed -->
         </tr>
@@ -20,7 +21,9 @@
         @foreach ($courseCodes as $courseUnit)
             <tr>
                 <td>{{ $courseUnit }}</td>
-             
+        @foreach($corseMame as $co)
+
+                <td>{{ $courseName }}</td>
                 <!-- Add more columns as needed -->
             </tr>
         @endforeach

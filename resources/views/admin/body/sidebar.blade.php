@@ -22,7 +22,7 @@
             
           
           
-          <li class="nav-item nav-category">web apps</li>
+          <!-- <li class="nav-item nav-category">web apps</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
@@ -42,19 +42,19 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="{{route('messages.display')}}" class="nav-link">
               <i class="link-icon" data-feather="message-square"></i>
               <span class="link-title">Messages</span>
             </a>
           </li>
-          <!-- <li class="nav-item">
+         <li class="nav-item">
             <a href="pages/apps/calendar.html" class="nav-link">
-              <i class="link-icon" data-feather="calendar"></i>
-              <span class="link-title">Calendar</span>
+              <i class="" data-feather="r"></i>
+              <span class="link-title">Add Users</span>
             </a>
-          </li> -->
+          </li>
           <li class="nav-item nav-category">Components</li>
         
           <li class="nav-item">
@@ -90,7 +90,7 @@
                   <a href="{{route('admin.subcourse.form')}}" class="nav-link">Assign Course units to Subject</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/forms/wizard.html" class="nav-link">Add Attendance</a>
+                  <a href="{{route('first.menubar')}}" class="nav-link">Add Attendance</a>
 
                 </li>
                 <li class="nav-item">
@@ -112,6 +112,12 @@
                 </li>
                 <li class="nav-item">
                   <a href="{{route('admin.combination.form')}}" class="nav-link">Add Subject to Combination</a>
+
+                </li>
+
+                </li>
+                <li class="nav-item">
+                  <a href="{{route('syllabus.create')}}" class="nav-link">Syllabus1</a>
 
                 </li>
 

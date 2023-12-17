@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('stprofiles', function (Blueprint $table) {
+        Schema::create('sylllabus11s', function (Blueprint $table) {
             $table->id();
-            $table->char('fullname');
-            $table->char('registration_no');
-            $table->char('level');
-            $table->char('semester');
-
+            $table->char('S_Code');
+            $table->char('Level');
+            $table->char('Semester_name');
+            $table->char('Course_code',10);
+            //$table->char('Course_name');
+            $table->char('Credit');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('stprofiles');
+        Schema::dropIfExists('sylllabus11s');
     }
 };
