@@ -116,7 +116,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="{{route('admin.add_stresults')}}" class="nav-link">Add Subject to Combination</a>
+                  <a href="{{route('admin.add_stresults')}}" class="nav-link">Add Result</a>
 
                 </li>
               </ul>
