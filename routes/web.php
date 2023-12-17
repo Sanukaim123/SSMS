@@ -42,6 +42,7 @@ use App\Http\Controllers\StprofileController;
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -115,7 +116,7 @@ Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->nam
 Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->name('admin.show_subjects');
 Route::post('/admin/show_subjects',[SubjectController::class,'sub_store'])->name('subject.store');
 Route::delete('/admin/show_/{subject}/destroy',[SubjectController::class,'destroy'])->name('subject.destroy');
-
+//shehani
 Route::get('/admin/add_courses',[Course_unitController::class,'add_course_units'])->name('admin.add_course_units');
 Route::get('/admin/show_courses',[Course_unitController::class,'show_course_units'])->name('admin.show_course_units');
 Route::post('/admin/show_courses',[Course_unitController::class,'course_store'])->name('course.store');
@@ -254,8 +255,62 @@ Route::post('/admin/add_stresult',[StresultController::class,'stresult_store'])-
     
 
 
+
+//suraj
+use App\Http\Controllers\ResuController;
+
+// Route to display the form for entering student data
+Route::get('/enter-student-data', [ResuController::class, 'showForm'])->name('enter-student-data');
+
+// Route to handle form submission and store student data
+Route::post('/store-student-data', [ResuController::class, 'store'])->name('store-student-data');
+
+
+
+Route::get('/view-results', [ResuController::class, 'viewResultsForm'])->name('view-results-form');
+Route::post('/view-results', [ResuController::class, 'viewResults'])->name('view-results');
+
+Route::match(['get', 'post'], '/view-gpa', [ResuController::class, 'viewGPA'])->name('view-gpa');
+
+// Inside web.php
+Route::get('/enter-student-number', [ResuController::class, 'showStudentNumberForm'])->name('enter-student-number');
+Route::post('/process-student-number', [ResuController::class, 'processStudentNumber'])->name('process-student-number');
+
+
+//subject gpa
+Route::post('/process-student-data', [ResuController::class, 'processStudentData'])->name('process-student-data');
+Route::match(['get', 'post'], '/process-student-data', [ResuController::class, 'processStudentData'])->name('process-student-data');
+
+Route::match(['get', 'post'], '/process-student-data', [ResuController::class, 'processStudentData'])->name('process-student-data');
+
+
+
+Route::get('/enter-student-number_and_subject', [ResuController::class, 'showStudentNumberAndSubjectForm'])->name('enter-student-number-and-subject');
+Route::post('/process-student-number', [ResuController::class, 'processStudentData'])->name('process-student-number');
+
+
+Route::post('/process-student-department-data', [ResuController::class, 'processStudentDepartmentData'])
+    ->name('process-student-department-data');
+
+Route::get('/enter-student-number_and_department', [ResuController::class, 'showStudentNumberAndDeoartmentForm'])->name('enter-student-number-and-department');
+Route::post('/process-student-number', [ResuController::class, 'processStudentDepartmentData'])->name('process-student-number');
+
+//shehani
+
+
+Route::get('stprofile',[StprofileController::class,'stindex'])->name('stprofiles.stindex');
+Route::get('stprofile/create',[StprofileController::class,'stcreate'])->name('stprofiles.stcreate');
+Route::post('stprofile',[StprofileController::class,'store'])->name('stprofile.store');
+Route::get('stprofile/{stprofile}/edit',[StprofileController::class,'edit'])->name('stprofiles.stedit');
+Route::put('stprofile/{stprofile}/update',[StprofileController::class,'update'])->name('stprofile.update');
+
+Route::view('/userdetails','userdetails');
+Route::get('/userdetails',[AddUserController::class,'show']);
+Route::delete('/userdetails/{record}/destroy',[AddUserController::class,'destroy'])->name('record.destroy');
+
 Route::get('stprofile',[StprofileController::class,'stindex'])->name('stprofiles.stindex');
 //Route::get('stprofile/create',[StprofileController::class,'stcreate'])->name('stprofiles.stcreate');
 Route::post('stprofile',[StprofileController::class,'store'])->name('stprofile.store');
 Route::get('stprofile/{stprofile}/edit',[StprofileController::class,'edit'])->name('stprofiles.stedit');
 Route::put('stprofile/{stprofile}/update',[StprofileController::class,'update'])->name('stprofile.update');
+

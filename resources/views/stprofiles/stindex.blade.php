@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"/>
 
 
-<div class="container">
+
+<div class="container" style="background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%);">
+
         <div class="row">
             <div class="col-12">
                 <div class="card">

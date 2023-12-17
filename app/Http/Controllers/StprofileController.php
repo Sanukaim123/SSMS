@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\stprofile;
+
+use App\Models\Stprofile;
+
 
 class StprofileController extends Controller
 {
