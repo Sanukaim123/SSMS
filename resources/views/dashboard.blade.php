@@ -110,12 +110,14 @@ img {vertical-align: middle;}
                         class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
                 <a href="{{route('student.courses')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-star me-2"></i> Syllabus </a>
-                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-book me-2"></i>My Courses </a>
                 <a href='/abc' class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-bell me-2"></i> Registration</a>
-                <a href="{{route('join_table')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-chart-line me-2"></i>Results and GPA </a>
+                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fa fa-book me-2"></i>My Courses </a>
+                <a href="{{route('view-results')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-chart-line me-2"></i>Results </a>
+                <a href="{{route('enter-student-number-and-department')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-chart-line me-2"></i> GPA </a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-calendar me-2"></i> Attendance</a> 
                 <a href="{{route('student.money_transfer.payment_home')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i

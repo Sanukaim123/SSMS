@@ -46,7 +46,11 @@ class AuthenticatedSessionController extends Controller
             $url='/dashboard';
         }
         
+
         
+        if(!$url) {
+            return back()->with('fail', 'Somthing worng!, Please check your inputs.');
+        } 
 
         return redirect()->intended($url);
     }

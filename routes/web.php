@@ -183,10 +183,8 @@ Route::post('/admin/processForm',[SubcombController::class,'processForm'])->name
 
 
 
-use App\Http\Controllers\St_resultController;
 
-Route::post('/student/upload', [St_resultController::class, 'store'])->name('student.upload');
-Route::get('join_table', [St_markController::class, 'index'])->name('join_table');
+
 Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.show_payment');
 
 //Route::get('/student/Registration',[RegistrationController::class,'index'])->name('register');  
@@ -255,9 +253,6 @@ Route::get('/display-noti', [notController::class, 'displayNoti'])
 Route::post('/admin/add_stresult',[StresultController::class,'stresult_store'])->name('stresult.store');
     
 
-//stprofile
-Route::get('/stprofile/create', [StprofileController::class, 'stcreate'])->name('stprofiles.stcreate');
-Route::view('/stprofiles/stcreate','stprofiles.stcreate');
 
 Route::get('stprofile',[StprofileController::class,'stindex'])->name('stprofiles.stindex');
 //Route::get('stprofile/create',[StprofileController::class,'stcreate'])->name('stprofiles.stcreate');

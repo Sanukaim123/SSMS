@@ -27,7 +27,7 @@
                 <input type="text" id="Course_Name" name="Course_Name" placeholder="Vectors"><br><br>
                 
                 <label for="Credit_Value">Credit value:</label><br>
-                <input type="Credit_Value" id="Credit_Value" name="Credit_Value" placeholder="Vectors"><br><br>
+                <input type="Credit_Value" id="Credit_Value" name="Credit_Value" placeholder="2.5"><br><br>
 
                 <p><label for="w3review">Description : </label></p>
 
@@ -39,7 +39,7 @@
         
         <button class="btn btn-primary" type="submit" value="Save a new course">Add</button>
     </form>
-    
+    <p>{{auth()->user()->name}} </p>
 </div>
    
 @endsection
