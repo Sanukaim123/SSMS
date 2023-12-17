@@ -348,3 +348,54 @@ div.transbox p {
 #footer p {
   margin: 0;
 }
+
+/*payment-home*/
+.hel{
+  text-align:center;
+  padding: 120px;
+  font-size:1.5rem;
+
+}
+
+.hell{
+  text-align:center;
+  font-size:2.2rem;
+}
+.pay{
+  text-align: center;
+}
+
+.btn-success {
+  background-color: lavenderblush; /* Background color for success button */
+  color: #0c0b0b; /* Text color for success button */
+  border: 1px solid #070c08; /* Border color for success button */
+  padding: 10px 100px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+.btn-success:hover {
+  background-color: #ac3089; /* Darker background color on hover */
+  border: 1px solid #11000d; /* Darker border color on hover */
+}
+
+/*payment_form*/
+#wizard11{
+  min-height: 570px;
+  background: #fff;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 107px 75px 65px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+.btn1{
+  text-align: center;
+  border:0;
+  padding:20px;
+  border-radius: 20px 20px;
+  
+}
