@@ -93,6 +93,7 @@ Route::view('/student/subject/physics','student.subject.physics');
 Route::view('/studentfeedback','studentfeedback');
 Route::view('/abc','abc');
 Route::view('/adduser','adduser');
+Route::view('/userdetails','userdetails');
 
 
 Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->name('admin.add_subjects');
@@ -152,6 +153,8 @@ Route::get('error',[PaymentController::class,'error']);
 Route::post('/studentfeedback',[feedbackcontroller::class,'studentfeedback']);
 Route::post('/adduser',[AddUserController::class,'store']);
 Route::get('/subject1details',[feedbackcontroller::class,'show']);
+Route::get('/userdetails',[AddUserController::class,'show']);
+Route::delete('/userdetails/{record}/destroy',[AddUserController::class,'destroy'])->name('record.destroy');
 
 Route::get('/admin/subcourse/form',[SubcourseController::class,'createForm'])->name('admin.subcourse.form');
 Route::get('/admin/subcourse/process',[SubcourseController::class,'showSubjects'])->name('admin.subcourse.show');

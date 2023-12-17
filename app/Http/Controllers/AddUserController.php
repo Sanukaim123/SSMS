@@ -28,5 +28,12 @@ class AddUserController extends Controller
 
 
     }
-   
+    function show(){
+        $data = User::all();
+        return view ('userdetails',['records'=>$data]);
+    }
+    public function destroy(User $record){
+        $record->delete();
+        return redirect('userdetails');
+    }
 }
