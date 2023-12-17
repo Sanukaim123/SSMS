@@ -126,6 +126,9 @@ img {vertical-align: middle;}
                         class="fa fa-bell me-2"></i> Feedback</a> 
                 <a href="{{route('chat.form')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-comment me-2"></i>Messages</a> 
+                <a href="{{route('stprofiles.stcreate')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fa fa-comment me-2"></i>My Details</a>
+                  
             </div>
         </div>
         <!-- /#sidebar-wrapper -->

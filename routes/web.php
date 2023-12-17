@@ -36,6 +36,8 @@ use App\Http\Controllers\chatcontroller;
 use App\Http\Controllers\DemonstratorController;
 use App\Http\Controllers\notController;
 use App\Http\Controllers\StresultController;
+use App\Http\Controllers\StprofileController;
+
 
 
 
@@ -253,4 +255,12 @@ Route::get('/display-noti', [notController::class, 'displayNoti'])
 Route::post('/admin/add_stresult',[StresultController::class,'stresult_store'])->name('stresult.store');
     
 
+//stprofile
+Route::get('/stprofile/create', [StprofileController::class, 'stcreate'])->name('stprofiles.stcreate');
+Route::view('/stprofiles/stcreate','stprofiles.stcreate');
 
+Route::get('stprofile',[StprofileController::class,'stindex'])->name('stprofiles.stindex');
+//Route::get('stprofile/create',[StprofileController::class,'stcreate'])->name('stprofiles.stcreate');
+Route::post('stprofile',[StprofileController::class,'store'])->name('stprofile.store');
+Route::get('stprofile/{stprofile}/edit',[StprofileController::class,'edit'])->name('stprofiles.stedit');
+Route::put('stprofile/{stprofile}/update',[StprofileController::class,'update'])->name('stprofile.update');
