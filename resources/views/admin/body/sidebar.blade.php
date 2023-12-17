@@ -116,7 +116,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="{{route('admin.add_stresults')}}" class="nav-link">Add Result</a>
+                  <a href="{{route('enter-student-data')}}" class="nav-link">Add Result</a>
 
                 </li>
               </ul>

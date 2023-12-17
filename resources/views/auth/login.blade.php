@@ -29,6 +29,14 @@
 		<div id="login_box">
 			<div id="left">
 
+            <!-- Login error notification -->
+           <!-- @if(Session::has('fail'))
+                <div class="alert alert-danger" style="text-align:center">
+                    {{Session::get('fail')}}
+                </div>
+            @endif  --> 
+            <!-- End Notification -->
+
                                 <form method="POST" action="{{ route('login') }}">
                                     @csrf
 
@@ -36,8 +44,8 @@
                                             <h2><b>Login Form</b></h2>
                                     </div>
                                     <div class="top_link"><a href="{{ route('register') }}"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" 
-				alt="">Create an account</a></div>
-                <br><br>
+				                            alt="">Create an account</a></div>
+                                    <br><br>
 
                                     <!-- Email Address -->
                                     <div>

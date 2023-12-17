@@ -181,10 +181,8 @@ Route::post('/admin/processForm',[SubcombController::class,'processForm'])->name
 
 
 
-use App\Http\Controllers\St_resultController;
 
-Route::post('/student/upload', [St_resultController::class, 'store'])->name('student.upload');
-Route::get('join_table', [St_markController::class, 'index'])->name('join_table');
+
 Route::get('/admin/show_payment',[Repeatcontroller::class,'show'])->name('admin.show_payment');
 
 //Route::get('/student/Registration',[RegistrationController::class,'index'])->name('register');  
@@ -253,4 +251,43 @@ Route::get('/display-noti', [notController::class, 'displayNoti'])
 Route::post('/admin/add_stresult',[StresultController::class,'stresult_store'])->name('stresult.store');
     
 
+
+//suraj
+use App\Http\Controllers\ResuController;
+
+// Route to display the form for entering student data
+Route::get('/enter-student-data', [ResuController::class, 'showForm'])->name('enter-student-data');
+
+// Route to handle form submission and store student data
+Route::post('/store-student-data', [ResuController::class, 'store'])->name('store-student-data');
+
+
+
+Route::get('/view-results', [ResuController::class, 'viewResultsForm'])->name('view-results-form');
+Route::post('/view-results', [ResuController::class, 'viewResults'])->name('view-results');
+
+Route::match(['get', 'post'], '/view-gpa', [ResuController::class, 'viewGPA'])->name('view-gpa');
+
+// Inside web.php
+Route::get('/enter-student-number', [ResuController::class, 'showStudentNumberForm'])->name('enter-student-number');
+Route::post('/process-student-number', [ResuController::class, 'processStudentNumber'])->name('process-student-number');
+
+
+//subject gpa
+Route::post('/process-student-data', [ResuController::class, 'processStudentData'])->name('process-student-data');
+Route::match(['get', 'post'], '/process-student-data', [ResuController::class, 'processStudentData'])->name('process-student-data');
+
+Route::match(['get', 'post'], '/process-student-data', [ResuController::class, 'processStudentData'])->name('process-student-data');
+
+
+
+Route::get('/enter-student-number_and_subject', [ResuController::class, 'showStudentNumberAndSubjectForm'])->name('enter-student-number-and-subject');
+Route::post('/process-student-number', [ResuController::class, 'processStudentData'])->name('process-student-number');
+
+
+Route::post('/process-student-department-data', [ResuController::class, 'processStudentDepartmentData'])
+    ->name('process-student-department-data');
+
+Route::get('/enter-student-number_and_department', [ResuController::class, 'showStudentNumberAndDeoartmentForm'])->name('enter-student-number-and-department');
+Route::post('/process-student-number', [ResuController::class, 'processStudentDepartmentData'])->name('process-student-number');
 
