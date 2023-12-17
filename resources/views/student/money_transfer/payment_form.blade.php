@@ -4,7 +4,7 @@
     <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight" >
-            {{ __('Dashboard') }}
+            
         </h2>
     </x-slot>
 
@@ -32,7 +32,9 @@
     
 	<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css/>
     <style>
-    
+     .table-error{
+            color: red;
+        }
 
     
     
@@ -43,33 +45,8 @@
 
 <body>
     <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
-        <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
-                    class=""></i>SSMS</div>
-            <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
-                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="{{route('student.courses')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-star me-2"></i> Syllabus </a>
-                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-book me-2"></i>My Courses </a>
-                <a href="{{route('register')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-bell me-2"></i> Registration</a>
-                <a href="{{route('join_table')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-chart-line me-2"></i>Results and GPA </a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-calendar me-2"></i> Attendance</a> 
-                <a href="{{route('student.money_transfer.payment_home')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-credit-card me-2"></i>Pay for Repeat Exams </a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-bell me-2"></i> Notifications</a> 
-                <a href="studentfeedback" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-bell me-2"></i> Feedback</a> 
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
-                        class="fas fa-power-off me-2"></i>Logout</a> 
-            </div>
-        </div>
+        
+                
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
@@ -92,29 +69,34 @@
         <div id="wizard11">
 
             <!-- SECTION 1 --> 
+            @if ($errors->any())
+    <div class="table-error">
+        <p>Please Fill All The Question</p>
+    </div>
+@endif
           
             <section>
         
-                <div class="form-row">
+                <div class="@error('full_name') table-error @enderror">
                 <label for="full_name" >Full Name:</label>
                      <input type="text" name="full_name" class="form-control" placeholder="Rasika Chathurangi Ariyathilaka" required>
                 </div>
-                <div class="form-row">
+                <div class="@error('student_num') table-error @enderror">
                 <label for="full_name" >Student Number:</label>
-                     <input type="text" name="student_num" class="form-control" placeholder="SC/2019/10863" required>
+                     <input type="text" name="student_num" class="form-control" placeholder="SC/2019/10863" >
                 </div>
-                <div class="form-row">
+                <div class="@error('address') table-error @enderror">
                 <label for="full_name" >Address:</label>
-                     <input type="text" name="address" class="form-control" placeholder="NO 23. Flower Road, Colombo" required>
+                     <input type="text" name="address" class="form-control" placeholder="NO 23. Flower Road, Colombo" >
                 </div>
-                <div class="form-row">
+                <div class="@error('amount') table-error @enderror">
                 <label for="full_name" >Amount:</label>
                      <input type="text" name="amount" class="form-control" placeholder="Amount" required>
                 </div>
 
                 <!-- degree in dropdown -->
 
-                <div class="dropdown">
+                <div class="@error('degree') table-error @enderror">
                 <label for="degree">Choose a degree:</label>
                     <select name="degree" id="degree">
                     <option name="degree" class="dropdown-btn" value="Basic Degree">Basic Degree</option>
@@ -143,7 +125,7 @@
                         -->
 
 
-                <div class="form-row">
+                <div class="@error('description') table-error @enderror">
                 <label for="description" >Course Unit Name and code:</label>
                     <textarea name="description" rows="10" class="form-control" placeholder="Note about Course Units" style="height: 108px">
                     </textarea> 

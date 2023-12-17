@@ -11,7 +11,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: radial-gradient(#171717, #2883e4);
+            background: linear-gradient(to right, #e96443, #904e95);
         }
 
         .card {

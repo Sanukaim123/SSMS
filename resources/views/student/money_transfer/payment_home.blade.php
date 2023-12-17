@@ -7,7 +7,7 @@
     
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight" >
-            {{ __('Dashboard') }}
+            
         </h2>
     </x-slot>
 
@@ -47,32 +47,7 @@
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
-        <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
-                    class=""></i>SSMS</div>
-            <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
-                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="{{route('student.courses')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-star me-2"></i> Syllabus </a>
-                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-book me-2"></i>My Courses </a>
-                <a href="{{route('register')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-bell me-2"></i> Registration</a>
-                <a href="{{route('join_table')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-chart-line me-2"></i>Results and GPA </a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-calendar me-2"></i> Attendance</a> 
-                <a href="{{route('student.money_transfer.payment_home')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-credit-card me-2"></i>Pay for Repeat Exams </a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-bell me-2"></i> Notifications</a> 
-                <a href="studentfeedback" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa fa-bell me-2"></i> Feedback</a> 
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
-                        class="fas fa-power-off me-2"></i>Logout</a> 
-            </div>
-        </div>
+        
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
