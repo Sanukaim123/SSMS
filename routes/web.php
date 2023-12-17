@@ -36,6 +36,7 @@ use App\Http\Controllers\chatcontroller;
 use App\Http\Controllers\DemonstratorController;
 use App\Http\Controllers\notController;
 use App\Http\Controllers\StresultController;
+use App\Http\Controllers\StprofileController;
 
 
 
@@ -113,7 +114,7 @@ Route::get('/admin/add_subjects',[SubjectController::class,'add_subjects'])->nam
 Route::get('/admin/show_subjects',[SubjectController::class,'show_subjects'])->name('admin.show_subjects');
 Route::post('/admin/show_subjects',[SubjectController::class,'sub_store'])->name('subject.store');
 Route::delete('/admin/show_/{subject}/destroy',[SubjectController::class,'destroy'])->name('subject.destroy');
-
+//shehani
 Route::get('/admin/add_courses',[Course_unitController::class,'add_course_units'])->name('admin.add_course_units');
 Route::get('/admin/show_courses',[Course_unitController::class,'show_course_units'])->name('admin.show_course_units');
 Route::post('/admin/show_courses',[Course_unitController::class,'course_store'])->name('course.store');
@@ -291,3 +292,15 @@ Route::post('/process-student-department-data', [ResuController::class, 'process
 Route::get('/enter-student-number_and_department', [ResuController::class, 'showStudentNumberAndDeoartmentForm'])->name('enter-student-number-and-department');
 Route::post('/process-student-number', [ResuController::class, 'processStudentDepartmentData'])->name('process-student-number');
 
+//shehani
+
+
+Route::get('stprofile',[StprofileController::class,'stindex'])->name('stprofiles.stindex');
+Route::get('stprofile/create',[StprofileController::class,'stcreate'])->name('stprofiles.stcreate');
+Route::post('stprofile',[StprofileController::class,'store'])->name('stprofile.store');
+Route::get('stprofile/{stprofile}/edit',[StprofileController::class,'edit'])->name('stprofiles.stedit');
+Route::put('stprofile/{stprofile}/update',[StprofileController::class,'update'])->name('stprofile.update');
+
+Route::view('/userdetails','userdetails');
+Route::get('/userdetails',[AddUserController::class,'show']);
+Route::delete('/userdetails/{record}/destroy',[AddUserController::class,'destroy'])->name('record.destroy');
