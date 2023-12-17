@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<h1>Add Combination</h1>
+@extends('admin.admindashboard')
+@section('admin')
+<div class="page-content">
+<h1>Add Semesters</h1>
     <div>
         @if($errors->any())
         <ul>
@@ -21,7 +16,7 @@
             @method('post')
             <div class="level-form-group row">
                     <label for="Semester_name">Semester:</label><br>
-                    <input type="text" id="Semester_name" name="Semester_name" placeholder="A"><br>
+                    <input type="text" id="Semester_name" name="Semester_name" placeholder="1"><br>
 
                    
                 </div>
@@ -31,5 +26,5 @@
             <button class="btn btn-primary" type="submit" value="Save a New Combination">Save</button>
         </form>
         
-</body>
-</html>
+</div>
+@endsection

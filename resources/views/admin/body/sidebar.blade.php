@@ -49,12 +49,12 @@
               <span class="link-title">Messages</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="pages/apps/calendar.html" class="nav-link">
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">Calendar</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item nav-category">Components</li>
         
           <li class="nav-item">
@@ -96,10 +96,10 @@
                 <li class="nav-item">
                   <a href="{{route('admin.add_combination')}}" class="nav-link">Add Combination</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a href="{{route('admin.assignsubCombination')}}" class="nav-link">Assign Subjects to Combination</a>
 
-                </li>
+                </li>  -->
                 <li class="nav-item">
                   <a href="{{route('admin.add_syllabus')}}" class="nav-link">Add Syllabus</a>
                 </li>
@@ -126,7 +126,7 @@
           
            
      
-          
+<!--           
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
               <i class="link-icon" data-feather="unlock"></i>
@@ -143,7 +143,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
           
           
         </ul>
