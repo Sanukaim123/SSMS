@@ -38,4 +38,18 @@ class CourseregistrationController extends Controller
 
     return redirect()->route('abc')->with('success', 'Subcourses added successfully');
 }
+public function showCourseUnits($sCode, $level, $semester)
+{
+// Retrieve the course codes from the syllabus table based on the given criteria
+//dd($sCode, $level, $semester);
+    $courseCodes = Courseregistration::where('name', $name)
+                        ->where('S_Code', $sCode)
+                        
+                        ->pluck('Course_Code');
+    //dd($courseCodes);
+    // Retrieve the course units from the courses table based on the course codes
+    //$courseUnits = Course::whereIn('Course_Code', $courseCodes)->get();
+
+    return view('mycourses', compact('courseCodes'));
+}
 }
