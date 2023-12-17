@@ -314,3 +314,13 @@ Route::post('stprofile',[StprofileController::class,'store'])->name('stprofile.s
 Route::get('stprofile/{stprofile}/edit',[StprofileController::class,'edit'])->name('stprofiles.stedit');
 Route::put('stprofile/{stprofile}/update',[StprofileController::class,'update'])->name('stprofile.update');
 
+use App\Http\Controllers\Syllabus1Controller;
+
+// Route to display the form
+Route::get('/admin/syllabus/create', [Syllabus1Controller::class, 'create'])->name('syllabus.create');
+
+// Route to handle the form submission
+Route::post('/admin/syllabus/store', [Syllabus1Controller::class, 'store'])->name('syllabus.store');
+
+// Route to filter and display syllabus
+Route::get('/admin/syllabus/filter', [Syllabus1Controller::class, 'filter'])->name('syllabus.filter');

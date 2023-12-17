@@ -65,18 +65,18 @@
     <div class="col-sm-6">
       <div class="card bg-primary">
         <div class="card-body">
-          <h5 class="card-title"> Lecturers </h5>
+          <h5 class="card-title"> Add Users </h5>
           <p class="card-text"></p>
-          <a href="#" class="btn btn-dark"> Add </a>
+          <a href="/adduser" class="btn btn-dark"> Add </a>
         </div>
       </div>
     </div>
     <div class="col-sm-6">
       <div class="card bg-primary">
         <div class="card-body">
-          <h5 class="card-title"> Demonstrators </h5>
+          <h5 class="card-title">User List </h5>
           <p class="card-text"></p>
-          <a href="" class="btn btn-dark">Add </a>
+          <a href="/userdetails" class="btn btn-dark">Add </a>
         </div>
       </div>
     </div>
