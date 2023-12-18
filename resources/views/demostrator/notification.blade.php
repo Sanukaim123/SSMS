@@ -60,9 +60,12 @@
         <div class="select-group">
             <label for="course"></label>
             <select id="course" name="course">
-            <option value="course1">Course 1</option>
-            <option value="course2">Course 2</option>
-            <option value="course3">Course 3</option>
+            <option value="course1">MAT111b</option>
+            <option value="course2">MAT112b</option>
+            <option value="course3">AMT111b</option>
+            <option value="course3">AMT112b</option>
+            <option value="course3">COM1111</option>
+            <option value="course3">COM113a</option>
 </select>
         </div>
     </div>

@@ -63,8 +63,8 @@
         <h1>View Student Results</h1>
         <form method="POST" action="{{ route('view-results') }}">
             @csrf
-            <label for="student_number">Enter Student Number:</label>
-            <input type="text" id="student_number" name="student_number" required>
+            <label for="student_number"> Student Number:</label>
+            <input type="text" id="student_number" name="student_number" value="{{auth()->user()->name}}" readonly}>
             <button type="submit">View Results</button>
         </form>
     </div>
