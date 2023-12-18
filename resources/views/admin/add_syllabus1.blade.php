@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+@extends('admin.admindashboard')
+@section('admin')
+<div class="page-content">
     <h1>Add Syllabus</h1>
+    <br>
+    <br>
     <form action="{{ url('/admin/syllabus/store') }}" method="post">
             @csrf
             
             <label for="S_Code">Select Subject:</label>
+            
             <select name="S_Code" id="S_Code">
                 @foreach($subjects as $id => $sCode)
                     <option value="{{ $sCode }}">{{ $sCode }}</option>
@@ -18,14 +16,17 @@
             </select>
 
             <br>
+            <br>
 
             <label for="Level">Select Level:</label>
+            
             <select name="Level" id="Level">
             @foreach($levels as $id => $level)
             <option value="{{ $level }}">{{ $level }}</option>
             @endforeach
             </select>
 
+            <br>
             <br>
 
             <label for="Semester_name">Select Semester:</label>
@@ -35,6 +36,7 @@
             @endforeach
             </select>
             <br>
+            <br>
 
             <label>Select Courses:</label>
             <select name="Course_code" id="Course_code">
@@ -42,6 +44,8 @@
             <option value="{{ $courseCode }}">{{ $courseCode }}</option>
             @endforeach
          </select>
+         <br>
+         <br>
 
          <!-- <label>Select Course Name:</label>
             <select name="Course_name" id="Course_name">
@@ -71,5 +75,5 @@
 
             <input type="submit" value="Submit">
         </form>
-</body>
-</html>
+</div>
+ @endsection

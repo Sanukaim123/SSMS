@@ -39,7 +39,7 @@
         
         <button class="btn btn-primary" type="submit" value="Save a new course">Add</button>
     </form>
-    <p>{{auth()->user()->name}} </p>
+    <!-- <p>{{auth()->user()->name}} </p> -->
 </div>
    
 @endsection

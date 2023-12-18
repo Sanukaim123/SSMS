@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtered Syllabus</title>
+    <title>Course Units relevant to Mathematics ,Level1,Semester I</title>
     <style>
         body {
             background-color: purple;
@@ -41,7 +41,7 @@
     </style>
 </head>
 <body>
-    <h1><Center>Filtered Syllabus Details<Center></h1>
+    <h1><Center>Course Units relevant to Mathematics ,Level1,Semester I<Center></h1>
 
     @if(count($filteredSyllabus) > 0)
         <table>

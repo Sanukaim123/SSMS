@@ -49,12 +49,12 @@
               <span class="link-title">Messages</span>
             </a>
           </li>
-         <li class="nav-item">
+         <!-- <li class="nav-item">
             <a href="pages/apps/calendar.html" class="nav-link">
               <i class="" data-feather="r"></i>
               <span class="link-title">Add Users</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item nav-category">Components</li>
         
           <li class="nav-item">
@@ -75,7 +75,7 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
               <i class="link-icon" data-feather="inbox"></i>
-              <span class="link-title"> Components </span>
+              <span class="link-title"> Forms </span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="forms">
@@ -100,9 +100,9 @@
                   <a href="{{route('admin.assignsubCombination')}}" class="nav-link">Assign Subjects to Combination</a>
 
                 </li>  -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a href="{{route('admin.add_syllabus')}}" class="nav-link">Add Syllabus</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a href="{{route('admin.level_list')}}" class="nav-link">Add Level</a>
                 </li>
@@ -117,7 +117,7 @@
 
                 </li>
                 <li class="nav-item">
-                  <a href="{{route('syllabus.create')}}" class="nav-link">Syllabus1</a>
+                  <a href="{{route('syllabus.create')}}" class="nav-link">Add Syllubus</a>
 
                 </li>
 
