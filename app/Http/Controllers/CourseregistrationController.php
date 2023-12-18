@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Courseregistretion;
+use App\Models\Courseregistration;
 use App\Models\User;
 use App\Models\Course;
 
@@ -30,7 +30,7 @@ class CourseregistrationController extends Controller
     $courseCodes = $request->input('Course_Codes');
 //dd($request);
     foreach ($courseCodes as $courseCode) {
-        Courseregistretion::create([
+        Courseregistration::create([
             'name' => $name,
             'Course_Code' => $courseCode,
         ]);

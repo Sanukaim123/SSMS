@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Courseregistretion extends Model
+class Courseregistration extends Model
 {
     use HasFactory;
     protected $fillable=[
