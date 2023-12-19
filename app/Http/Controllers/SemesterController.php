@@ -20,6 +20,6 @@ class SemesterController extends Controller
         ]);
 
         $newSemester= Semester::create($data);
-        return redirect(route('admin.show'));  
+        return redirect(route('admin.add_semester'));  
     }
 }
