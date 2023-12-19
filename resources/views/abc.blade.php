@@ -110,14 +110,7 @@
             <input type="text" id="name" name="name" value="{{ auth()->user()->name }}" readonly><br>
             
     
-    <h1><center>Select Course units</center></h1>
-
-    <form method="post" action="{{url('abc/process')}}">
-        @csrf
-        <label for="name">User Id:</label><br>
-        <input type="text" id="name" name="name"  value="{{ auth()->user()->name }}" readonly><br>
-
-
+    
   
     <label>Select Courses: </label>
 
