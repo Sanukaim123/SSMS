@@ -27,7 +27,7 @@ class LevelController extends Controller
         ]);
 
         $newLevel= Level::create($data);
-        return redirect(route('admin.show_levels'));
+        return redirect(route('admin.level_list'));
     }
 
     public function show_levels(){
